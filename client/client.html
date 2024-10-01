@@ -1,11 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 1 Milestone</title>
 </head>
+
 <body>
+    <h1>Genshin Impact API</h1>
     
+    <div id="randomGet1">
+        <h2>Random Character Information (GET 1)</h2>
+        <p>Generate information about a random character.</p>
+        <button id="sendRandom">Get Character Info</button>
+    </div>
+    
+    <div id="elementGet2">
+        <h2>Vision Roster (GET 2)</h2>
+        <p>See all characters of a specific Vision.</p>
+        <select id="element">
+            <option value="pyro">Pyro (Fire)</option>
+            <option value="hydro">Hydro (Water)</option>
+            <option value="anemo">Anemo (Wind)</option>
+            <option value="electro">Electro (Electricity)</option>
+            <option value="dendro">Dendro (Life/Plant)</option>
+            <option value="cryo">Cryo (Ice)</option>
+            <option value="geo">Geo (Earth)</option>
+        </select>
+        <button id="sendElementList">Get Characters</button>
+    </div>
+
+    <div id="talentsGet3">
+        <h2>View Talents (GET 3)</h2>
+        <p>Enter a character name to see their talents.</p>
+        <label>Name:</label>
+        <input id="name" type="text" />
+        <button id="sendTalent">Get Talents</button><br>
+        <small>*Recommended: Use given/first name, not the family name. Either works but it gets a little funky with the Inazuman siblings/characters.</small>
+    </div>
+
+    <div id="regionGet4">
+        <h2>Regional Roster (GET 4)</h2>
+        <p>Select a region to view all characters who reside there.</p>
+        <select id="region">
+            <option value="Natlan">Natlan</option>
+            <option value="Fontaine">Fontaine</option>
+            <option value="Mondstadt">Mondstadt</option>
+            <option value="Inazuma">Inazuma</option>
+            <option value="Sumeru">Sumeru</option>
+            <option value="Snezhnaya">Snezhnaya</option>
+            <option value="Liyue">Liyue</option>
+        </select>
+        <button id="sendRegion">Get Regional Characters</button><br>
+        <small>*Please note: Characters are categorized by the region's Vision they hold, not necessarily their birth/residency.</small>
+    </div>
+
+    <div id="characterPost1">
+        <h2>Create a New Character (POST 1)</h2>
+        <label>Character Details </label><br>
+        <label>Name: </label>
+        <input id="name" type="text" /><br>
+        <label>Element: </label>
+        <select id="element">
+            <option value="pyro">Pyro (Fire)</option>
+            <option value="hydro">Hydro (Water)</option>
+            <option value="anemo">Anemo (Wind)</option>
+            <option value="electro">Electro (Electricity)</option>
+            <option value="dendro">Dendro (Life/Plant)</option>
+            <option value="cryo">Cryo (Ice)</option>
+            <option value="geo">Geo (Earth)</option>
+        </select>
+        <label>Weapon: </label>
+        <select id="element">
+            <option value="Sword">Sword</option>
+            <option value="Polearm">Polearm</option>
+            <option value="Claymore">Claymore</option>
+            <option value="Catalyst">Catalyst</option>
+            <option value="Bow">Bow</option>
+        </select>
+        <label>Region: </label>
+        <select id="region">
+            <option value="Natlan">Natlan</option>
+            <option value="Fontaine">Fontaine</option>
+            <option value="Mondstadt">Mondstadt</option>
+            <option value="Inazuma">Inazuma</option>
+            <option value="Sumeru">Sumeru</option>
+            <option value="Snezhnaya">Snezhnaya</option>
+            <option value="Liyue">Liyue</option>
+        </select>
+        <label>Rarity (star count): </label>
+        <input id="rarity" type="number" min="4" max="5" step="1" />
+        <hr>
+        <label>Assign Talents </label><br>
+        <label>Basic: </label>
+        <input id="basic" type="text" />
+        <label>Skill: </label>
+        <input id="skill" type="text" />
+        <label>Burst: </label>
+        <input id="burst" type="text" />
+        <button id="sendCharacter">Submit Character</button>
+    </div>
+    <h2>POST edit character?</h2>
 </body>
+
 </html>

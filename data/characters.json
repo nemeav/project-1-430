@@ -1,0 +1,1151 @@
+[
+    {
+        "name": "Albedo",
+        "element": "Geo",
+        "weapon": "Sword",
+        "region": "Mondstadt",
+        "rarity": 5,
+        "talents": {
+            "basic": "Favonius Bladework - Weiss",
+            "skill": "Abiogenesis: Solar Isotoma",
+            "burst": "Rite of Progeniture: Tectonic Tide"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Albedo"
+    },
+    {
+        "name": "Alhaitham",
+        "element": "Dendro",
+        "weapon": "Sword",
+        "region": "Sumeru",
+        "rarity": 5,
+        "talents": {
+            "basic": "Abductive Reasoning",
+            "skill": "Universality: An Elaboration on Form",
+            "burst": "Particular Field: Fetters of Phenomena"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Alhaitham"
+    },
+    {
+        "name": "Aloy",
+        "element": "Cryo",
+        "weapon": "Bow",
+        "region": "N/A",
+        "rarity": 5,
+        "talents": {
+            "basic": "Rapid Fire",
+            "skill": "Frozen Wilds",
+            "burst": "Prophecies of Dawn"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Aloy"
+    },
+    {
+        "name": "Amber",
+        "element": "Pyro",
+        "weapon": "Bow",
+        "region": "Mondstadt",
+        "rarity": 4,
+        "talents": {
+            "basic": "Sharpshooter",
+            "skill": "Explosive Puppet",
+            "burst": "Fiery Rain"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Amber"
+    },
+    {
+        "name": ["Arlecchino", "Shnezevna", "Arlecchino Shnezevna", "The Knave"],
+        "element": "Pyro",
+        "weapon": "Polearm",
+        "region": "Snezhnaya",
+        "rarity": 5,
+        "talents": {
+            "basic": "Invitation to a Beheading",
+            "skill": "All is Ash",
+            "burst": "Balemoon Rising"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Arlecchino"
+    },
+    {
+        "name": ["Ayaka", "Kamisato", "Kamisato Ayaka", "Ayaka Kamisato"],
+        "element": "Cryo",
+        "weapon": "Sword",
+        "region": "Inazuma",
+        "rarity": 5,
+        "talents": {
+            "basic": "Kamisato Art: Kabuki",
+            "skill": "Kamisato Art: Hyouka",
+            "burst": "Kamisato Art: Soumetsu"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Kamisato_Ayaka"
+    },
+    {
+        "name": ["Ayato", "Kamisato", "Kamisato Ayato", "Ayato Kamisato"],
+        "element": "Hydro",
+        "weapon": "Sword",
+        "region": "Inazuma",
+        "rarity": 5,
+        "talents": {
+            "basic": "Kamisato Art: Marobashi",
+            "skill": "Kamisato Art: Kyouka",
+            "burst": "Kamisato Art: Suiyuu"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Kamisato_Ayato"
+    },
+    {
+        "name": "Baizhu",
+        "element": "Dendro",
+        "weapon": "Catalyst",
+        "region": "Liyue",
+        "rarity": 5,
+        "talents": {
+            "basic": "The Classics of Acupuncture",
+            "skill": "Universal Diagnosis",
+            "burst": "Holistic Revivification"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Baizhu"
+    },
+    {
+        "name": ["Barbara", "Pegg", "Gunnhildr", "Barbara Pegg"],
+        "element": "Hydro",
+        "weapon": "Catalyst",
+        "region": "Mondstadt",
+        "rarity": 4,
+        "talents": {
+            "basic": "Whisper of Water",
+            "skill": "Let the Show Begin♪",
+            "burst": "Shining Miracle♪"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Barbara"
+    },
+    {
+        "name": "Beidou",
+        "element": "Electro",
+        "weapon": "Claymore",
+        "region": "Liyue",
+        "rarity": 4,
+        "talents": {
+            "basic": "Oceanborne",
+            "skill": "Tidecaller",
+            "burst": "Stormbreaker"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Beidou"
+    },
+    {
+        "name": "Bennett",
+        "element": "Pyro",
+        "weapon": "Sword",
+        "region": "Mondstadt",
+        "rarity": 4,
+        "talents": {
+            "basic": "Strike of Fortune",
+            "skill": "Passion Overload",
+            "burst": "Fantastic Voyage"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Bennett"
+    },
+    {
+        "name": "Candace",
+        "element": "Hydro",
+        "weapon": "Polearm",
+        "region": "Sumeru",
+        "rarity": 4,
+        "talents": {
+            "basic": "Gleaming Spear - Guardian Stance",
+            "skill": "Sacred Rite: Heron’s Sanctum",
+            "burst": "Sacred Rite: Wagtail's Tide"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Candace"
+    },
+    {
+        "name": "Charlotte",
+        "element": "Cryo",
+        "weapon": "Catalyst",
+        "region": "Fontaine",
+        "rarity": 4,
+        "talents": {
+            "basic": "Cool-Color Capture",
+            "skill": "Framing: Freezing Point Composition",
+            "burst": "Still Photo: Comprehensive Confirmation"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Charlotte"
+    },
+    {
+        "name": "Chevreuse",
+        "element": "Pyro",
+        "weapon": "Polearm",
+        "region": "Fontaine",
+        "rarity": 4,
+        "talents": {
+            "basic": "Line Bayonet Thrust EX",
+            "skill": "Short-Range Rapid Interdiction Fire",
+            "burst": "Ring of Bursting Grenades"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Chevreuse"
+    },
+    {
+        "name": "Chiori",
+        "element": "Geo",
+        "weapon": "Sword",
+        "region": "Inazuma",
+        "rarity": 5,
+        "talents": {
+            "basic": "Weaving Blade",
+            "skill": "Fluttering Hasode",
+            "burst": "Hiyoku: Twin Blades"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Chiori"
+    },
+    {
+        "name": "Chongyun",
+        "element": "Cryo",
+        "weapon": "Claymore",
+        "region": "Liyue",
+        "rarity": 4,
+        "talents": {
+            "basic": "Demonbane",
+            "skill": "Spirit Blade: Chonghua’s Layered Frost",
+            "burst": "Spirit Blade: Cloud-Parting Star"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Chongyun"
+    },
+    {
+        "name": "Clorinde",
+        "element": "Electro",
+        "weapon": "Sword",
+        "region": "Fontaine",
+        "rarity": 5,
+        "talents": {
+            "basic": "Oath of Hunting Shadows",
+            "skill": "Hunter's Vigil",
+            "burst": "Last Lightfall"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Clorinde"
+    },
+    {
+        "name": "Collei",
+        "element": "Dendro",
+        "weapon": "Bow",
+        "region": "Sumeru",
+        "rarity": 4,
+        "talents": {
+            "basic": "Supplicant’s Bowmanship",
+            "skill": "Floral Brush",
+            "burst": "Trump-Card Kitty"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Collei"
+    },
+    {
+        "name": "Cyno",
+        "element": "Electro",
+        "weapon": "Polearm",
+        "region": "Sumeru",
+        "rarity": 5,
+        "talents": {
+            "basic": "Invoker's Spear",
+            "skill": "Secret Rite: Chasmic Soulfarer",
+            "burst": "Sacred Rite: Wolf's Swiftness"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Cyno"
+    },
+    {
+        "name": "Dehya",
+        "element": "Pyro",
+        "weapon": "Claymore",
+        "region": "Sumeru",
+        "rarity": 5,
+        "talents": {
+            "basic": "Sandstorm Assault",
+            "skill": "Molten Inferno",
+            "burst": "Leonine Bite"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Dehya"
+    },
+    {
+        "name": ["Diluc", "Ragnvindr", "Diluc Ragnvindr"],
+        "element": "Pyro",
+        "weapon": "Claymore",
+        "region": "Mondstadt",
+        "rarity": 5,
+        "talents": {
+            "basic": "Tempered Sword",
+            "skill": "Searing Onslaught",
+            "burst": "Dawn"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Diluc"
+    },
+    {
+        "name": ["Diona", "Kätzlein", "Diona Kätzlein"],
+        "element": "Cryo",
+        "weapon": "Bow",
+        "region": "Mondstadt",
+        "rarity": 4,
+        "talents": {
+            "basic": "Kätzlein Style",
+            "skill": "Icy Paws",
+            "burst": "Signature Mix"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Diona"
+    },
+    {
+        "name": "Dori",
+        "element": "Electro",
+        "weapon": "Claymore",
+        "region": "Sumeru",
+        "rarity": 4,
+        "talents": {
+            "basic": "Marvelous Sword-Dance (Modified)",
+            "skill": "Spirit-Warding Lamp: Troubleshooter Cannon",
+            "burst": "Alcazarzaray’s Exactitude"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Dori"
+    },
+    {
+        "name": "Emilie",
+        "element": "Dendro",
+        "weapon": "Polearm",
+        "region": "Fontaine",
+        "rarity": 5,
+        "talents": {
+            "basic": "Shadow-Hunting Spear (Custom)",
+            "skill": "Fragrance Extraction",
+            "burst": "Aromatic Explication"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Emilie"
+    },
+    {
+        "name": ["Eula", "Lawrence", "Eula Lawrence"],
+        "element": "Cryo",
+        "weapon": "Claymore",
+        "region": "Mondstadt",
+        "rarity": 5,
+        "talents": {
+            "basic": "Favonius Bladework - Edel",
+            "skill": "Icetide Vortex",
+            "burst": "Glacial Illumination"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Eula"
+    },
+    {
+        "name": "Faruzan",
+        "element": "Anemo",
+        "weapon": "Bow",
+        "region": "Sumeru",
+        "rarity": 4,
+        "talents": {
+            "basic": "Parthian Shot",
+            "skill": "Wind Realm of Nasamjnin",
+            "burst": "The Wind’s Secret Ways"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Faruzan"
+    },
+    {
+        "name": ["Fischl", "von Luftschloss Narfidort", "Fischl von Luftschloss Narfidort", "Amy"],
+        "element": "Electro",
+        "weapon": "Bow",
+        "region": "Mondstadt",
+        "rarity": 4,
+        "talents": {
+            "basic": "Bolts of Downfall",
+            "skill": "Nightrider",
+            "burst": "Midnight Phantasmagoria"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Fischl"
+    },
+    {
+        "name": ["Freminet", "Shnezevich", "Freminet Shnezevich"],
+        "element": "Cryo",
+        "weapon": "Claymore",
+        "region": "Fontaine",
+        "rarity": 4,
+        "talents": {
+            "basic": "Flowing Eddies",
+            "skill": "Pressurized Floe",
+            "burst": "Shadowhunter’s Ambush"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Freminet"
+    },
+    {
+        "name": "Furina",
+        "element": "Hydro",
+        "weapon": "Sword",
+        "region": "Fontaine",
+        "rarity": 5,
+        "archon": true,
+        "talents": {
+            "basic": "Soloist's Solicitation",
+            "skill": "Salon Solitaire",
+            "burst": "Let the People Rejoice"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Furina"
+    },
+    {
+        "name": ["Gaming", "Yip", "Yip Gaming", "Gaming Yip"],
+        "element": "Pyro",
+        "weapon": "Claymore",
+        "region": "Liyue",
+        "rarity": 4,
+        "talents": {
+            "basic": "Stellar Rend",
+            "skill": "Bestial Ascent",
+            "burst": "Suanni's Gilded Dance"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Gaming"
+    },
+    {
+        "name": "Ganyu",
+        "element": "Cryo",
+        "weapon": "Bow",
+        "region": "Liyue",
+        "rarity": 5,
+        "talents": {
+            "basic": "Liutian Archery",
+            "skill": "Trail of the Qilin",
+            "burst": "Celestial Shower"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Ganyu"
+    },
+    {
+        "name": "Gorou",
+        "element": "Geo",
+        "weapon": "Bow",
+        "region": "Inazuma",
+        "rarity": 4,
+        "talents": {
+            "basic": "Ripping Fang Fletching",
+            "skill": "Inuzaka All-Round Defense",
+            "burst": "Juuga: Forward Unto Victory"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Gorou"
+    },
+    {
+        "name": ["Heizou", "Shikanoin", "Shikanoin Heizou", "Heizou Shikanoin"],
+        "element": "Anemo",
+        "weapon": "Catalyst",
+        "region": "Inazuma",
+        "rarity": 4,
+        "talents": {
+            "basic": "Fudou Style Martial Arts",
+            "skill": "Heartstopper Strike",
+            "burst": "Windmuster Kick"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Shikanoin_Heizou"
+    },
+    {
+        "name": ["Hu Tao", "Tao", "Hu", "Tao Hu"],
+        "element": "Pyro",
+        "weapon": "Polearm",
+        "region": "Liyue",
+        "rarity": 5,
+        "talents": {
+            "basic": "Secret Spear of Wangsheng",
+            "skill": "Guide to Afterlife",
+            "burst": "Spirit Soother"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Hu_Tao"
+    },
+    {
+        "name": ["Itto", "Arataki", "Arataki Itto", "Itto Arataki"],
+        "element": "Geo",
+        "weapon": "Claymore",
+        "region": "Inazuma",
+        "rarity": 5,
+        "talents": {
+            "basic": "Fight Club Legend",
+            "skill": "Masatsu Zetsugi: Akaushi Burst!",
+            "burst": "Royal Descent: Behold, Itto the Evil!"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Arataki_Itto"
+    },
+    {
+        "name": ["Jean", "Gunnhildr", "Pegg", "Jean Gunnhildr"],
+        "element": "Anemo",
+        "weapon": "Sword",
+        "region": "Mondstadt",
+        "rarity": 5,
+        "talents": {
+            "basic": "Favonius Bladework",
+            "skill": "Gale Blade",
+            "burst": "Dandelion Breeze"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Jean"
+    },
+    {
+        "name": ["Jin", "Yun", "Yun Jin", "Jin Yun"],
+        "element": "Geo",
+        "weapon": "Polearm",
+        "region": "Liyue",
+        "rarity": 4,
+        "talents": {
+            "basic": "Cloud-Grazing Strike",
+            "skill": "Opening Flourish",
+            "burst": "Cliffbreaker's Banner"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Yun_Jin"
+    },    
+    {
+        "name": "Kachina",
+        "element": "Geo",
+        "weapon": "Polearm",
+        "region": "Natlan",
+        "rarity": 4,
+        "talents": {
+            "basic": "Cragbiter",
+            "skill": "Go, Go Turbo Twirly!",
+            "burst": "Time to Get Serious!"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Kachina"
+    },
+    {
+        "name": ["Kaeya", "Alberich", "Kaeya Alberich"],
+        "element": "Cryo",
+        "weapon": "Sword",
+        "region": "Mondstadt",
+        "rarity": 4,
+        "talents": {
+            "basic": "Ceremonial Bladework",
+            "skill": "Frostgnaw",
+            "burst": "Glacial Waltz"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Kaeya"
+    },
+    {
+        "name": "Kaveh",
+        "element": "Dendro",
+        "weapon": "Claymore",
+        "region": "Sumeru",
+        "rarity": 4,
+        "talents": {
+            "basic": "Schematic Setup",
+            "skill": "Artistic Ingenuity",
+            "burst": "Painted Dome"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Kaveh"
+    },
+    {
+        "name": ["Kazuha", "Kaedehara", "Kaedehara Kazuha", "Kazuha Kaedehara"],
+        "element": "Anemo",
+        "weapon": "Sword",
+        "region": "Inazuma",
+        "rarity": 5,
+        "talents": {
+            "basic": "Garyuu Bladework",
+            "skill": "Chihayaburu",
+            "burst": "Kazuha Slash"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Kaedehara_Kazuha"
+    },
+    {
+        "name": "Keqing",
+        "element": "Electro",
+        "weapon": "Sword",
+        "region": "Liyue",
+        "rarity": 5,
+        "talents": {
+            "basic": "Yunlai Swordsmanship",
+            "skill": "Stellar Restoration",
+            "burst": "Starward Sword"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Keqing"
+    },
+    {
+        "name": "Kinich",
+        "element": "Dendro",
+        "weapon": "Claymore",
+        "region": "Natlan",
+        "rarity": 5,
+        "talents": {
+            "basic": "Nightsun Style",
+            "skill": "Canopy Hunter: Riding High",
+            "burst": "Hail to the Almighty Dragonlord"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Kinich"
+    },
+    {
+        "name": "Kirara",
+        "element": "Dendro",
+        "weapon": "Claymore",
+        "region": "Inazuma",
+        "rarity": 4,
+        "talents": {
+            "basic": "Boxcutter",
+            "skill": "Meow-teor Kick",
+            "burst": "Secret Art: Surprise Dispatch"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Kirara"
+    },
+    {
+        "name": "Klee",
+        "element": "Pyro",
+        "weapon": "Catalyst",
+        "region": "Mondstadt",
+        "rarity": 5,
+        "talents": {
+            "basic": "Kaboom!",
+            "skill": "Jumpy Dumpty",
+            "burst": "Sparks 'n' Splash"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Klee"
+    },
+    {
+        "name": ["Kokomi", "Sangonomiya", "Sangonomiya Kokomi", "Kokomi Sangonomoiya"],
+        "element": "Hydro",
+        "weapon": "Catalyst",
+        "region": "Inazuma",
+        "rarity": 5,
+        "talents": {
+            "basic": "The Shape of Water",
+            "skill": "Kurage's Oath",
+            "burst": "Nereid's Ascension"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Sangonomiya_Kokomi"
+    },
+    {
+        "name": "Layla",
+        "element": "Cryo",
+        "weapon": "Sword",
+        "region": "Sumeru",
+        "rarity": 4,
+        "talents": {
+            "basic": "Sword of the Radiant Path",
+            "skill": "Nights of Formal Focus",
+            "burst": "Dream of the Star-Stream Shaker"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Layla"
+    },
+    {
+        "name": ["Lisa", "Minci", "Lisa Minci"],
+        "element": "Electro",
+        "weapon": "Catalyst",
+        "region": "Mondstadt",
+        "rarity": 4,
+        "talents": {
+            "basic": "Lightning Touch",
+            "skill": "Violet Arc",
+            "burst": "Lightning Rose"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Lisa"
+    },
+    {
+        "name": ["Lynette", "Shnezevna", "Lynette Shnezevna"],
+        "element": "Anemo",
+        "weapon": "Sword",
+        "region": "Fontaine",
+        "rarity": 4,
+        "talents": {
+            "basic": "Rapid Ritesword",
+            "skill": "Enigmatic Feint",
+            "burst": "Magic Trick: Astonishing Shift"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Lynette"
+    },
+    {
+        "name": ["Lyney", "Shnezevich", "Lyney Shnezevich"],
+        "element": "Pyro",
+        "weapon": "Bow",
+        "region": "Fontaine",
+        "rarity": 5,
+        "talents": {
+            "basic": "Card Force Translocation",
+            "skill": "Bewildering Lights",
+            "burst": "Wondrous Trick: Miracle Parade"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Lyney"
+    },
+    {
+        "name": ["Mika", "Schmidt", "Mika Schmidt"],
+        "element": "Cryo",
+        "weapon": "Polearm",
+        "region": "Mondstadt",
+        "rarity": 4,
+        "talents": {
+            "basic": "Spear of Favonius - Arrow's Passage",
+            "skill": "Starfrost Swirl",
+            "burst": "Skyfeather Song"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Mika"
+    },
+    {
+        "name": ["Miko", "Yae", "Yae Miko", "Miko Yae"],
+        "element": "Electro",
+        "weapon": "Catalyst",
+        "region": "Inazuma",
+        "rarity": 5,
+        "talents": {
+            "basic": "Spiritfox Sin-Eater",
+            "skill": "Yakan Evocation: Sesshou Sakura",
+            "burst": "Great Secret Art: Tenko Kenshin"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Yae_Miko"
+    },    
+    {
+        "name": ["Mona", "Megistus", "Mona Megistus"],
+        "element": "Hydro",
+        "weapon": "Catalyst",
+        "region": "Mondstadt",
+        "rarity": 5,
+        "talents": {
+            "basic": "Ripple of Fate",
+            "skill": "Mirror Reflection of Doom",
+            "burst": "Stellaris Phantasm"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Mona"
+    },
+    {
+        "name": "Mualani",
+        "element": "Hydro",
+        "weapon": "Catalyst",
+        "region": "Natlan",
+        "rarity": 5,
+        "talents": {
+            "basic": "Cooling Treatment",
+            "skill": "Surfshark Wavebreaker",
+            "burst": "Boomsharka-laka"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Mualani"
+    },
+    {
+        "name": "Nahida",
+        "element": "Dendro",
+        "weapon": "Catalyst",
+        "region": "Sumeru",
+        "rarity": 5,
+        "archon": true,
+        "talents": {
+            "basic": "Akara",
+            "skill": "All Schemes to Know",
+            "burst": "Illusory Heart"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Nahida"
+    },
+    {
+        "name": ["Navia", "Caspar", "Navia Caspar"],
+        "element": "Geo",
+        "weapon": "Claymore",
+        "region": "Fontaine",
+        "rarity": 5,
+        "talents": {
+            "basic": "Blunt Refusal",
+            "skill": "Ceremonial Crystalshot",
+            "burst": "As the Sunlit Sky's Singing Salute"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Navia"
+    },
+    {
+        "name": "Neuvillette",
+        "element": "Hydro",
+        "weapon": "Catalyst",
+        "region": "Fontaine",
+        "rarity": 5,
+        "talents": {
+            "basic": "As Water Seeks Equilibrium",
+            "skill": "O Tears, I Shall Repay",
+            "burst": "O Tides, I Have Returned"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Neuvillette"
+    },
+    {
+        "name": "Nilou",
+        "element": "Hydro",
+        "weapon": "Sword",
+        "region": "Sumeru",
+        "rarity": 5,
+        "talents": {
+            "basic": "Dance of Samser",
+            "skill": "Dance of Haftkarsvar",
+            "burst": "Dance of Abzendegi: Distant Dreams, Listening Spring"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Nilou"
+    },
+    {
+        "name": "Ningguang",
+        "element": "Geo",
+        "weapon": "Catalyst",
+        "region": "Liyue",
+        "rarity": 4,
+        "talents": {
+            "basic": "Sparkling Scatter",
+            "skill": "Jade Screen",
+            "burst": "Starshatter"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Ningguang"
+    },
+    {
+        "name": "Noelle",
+        "element": "Geo",
+        "weapon": "Claymore",
+        "region": "Mondstadt",
+        "rarity": 4,
+        "talents": {
+            "basic": "Favonius Bladework - Maid",
+            "skill": "Breastplate",
+            "burst": "Sweeping Time"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Noelle"
+    },
+    {
+        "name": "Qiqi",
+        "element": "Cryo",
+        "weapon": "Sword",
+        "region": "Liyue",
+        "rarity": 5,
+        "talents": {
+            "basic": "Ancient Sword Art",
+            "skill": "Adeptus Art: Herald of Frost",
+            "burst": "Adeptus Art: Preserver of Fortune"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Qiqi"
+    },
+    {
+        "name": ["Raiden Shogun", "Ei"],
+        "element": "Electro",
+        "weapon": "Polearm",
+        "region": "Inazuma",
+        "rarity": 5,
+        "archon": true,
+        "talents": {
+            "basic": "Origin",
+            "skill": "Transcendence: Baleful Omen",
+            "burst": "Secret Art: Musou Shinsetsu"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Raiden_Shogun"
+    },
+    {
+        "name": "Razor",
+        "element": "Electro",
+        "weapon": "Claymore",
+        "region": "Mondstadt",
+        "rarity": 4,
+        "talents": {
+            "basic": "Steel Fang",
+            "skill": "Claw and Thunder",
+            "burst": "Lightning Fang"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Razor"
+    },
+    {
+        "name": "Rosaria",
+        "element": "Cryo",
+        "weapon": "Polearm",
+        "region": "Mondstadt",
+        "rarity": 4,
+        "talents": {
+            "basic": "Spear of the Church",
+            "skill": "Ravaging Confession",
+            "burst": "Rites of Termination"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Rosaria"
+    },
+    {
+        "name": ["Sara", "Kujou", "Kujou Sara", "Sara Kujou"],
+        "element": "Electro",
+        "weapon": "Bow",
+        "region": "Inazuma",
+        "rarity": 4,
+        "talents": {
+            "basic": "Tengu Bowmanship",
+            "skill": "Tengu Stromcall",
+            "burst": "Subjugation: Koukou Sendou"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Kujou_Sara"
+    },
+    {
+        "name": "Sayu",
+        "element": "Anemo",
+        "weapon": "Claymore",
+        "region": "Inazuma",
+        "rarity": 4,
+        "talents": {
+            "basic": "Shuumatsuban Ninja Blade",
+            "skill": "Yoohoo Art: Fuuin Dash",
+            "burst": "Yoohoo Art: Mujina Flurry"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Sayu"
+    },
+    {
+        "name": "Sethos",
+        "element": "Electro",
+        "weapon": "Bow",
+        "region": "Sumeru",
+        "rarity": 4,
+        "talents": {
+            "basic": "Royal Reed Archery",
+            "skill": "Ancient Rite: The Thundering Sands",
+            "burst": "Secret Rite: Twilight Shadowpiercer"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Sethos"
+    },
+    {
+        "name": "Shenhe",
+        "element": "Cryo",
+        "weapon": "Polearm",
+        "region": "Liyue",
+        "rarity": 5,
+        "talents": {
+            "basic": "Dawnstar Piercer",
+            "skill": "Spring Spirit Summoning",
+            "burst": "Divine Maiden's Deliverance"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Shenhe"
+    },
+    {
+        "name": ["Shinobu", "Kuki", "Kuki Shinobu", "Shinobu Kuki"],
+        "element": "Electro",
+        "weapon": "Sword",
+        "region": "Inazuma",
+        "rarity": 4,
+        "talents": {
+            "basic": "Shinobu's Shadowsword",
+            "skill": "Sanctifying Ring",
+            "burst": "Gyoei Narukami Kariyama Rite"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Kuki_Shinobu"
+    },
+    {
+        "name": "Sigewinne",
+        "element": "Hydro",
+        "weapon": "Bow",
+        "region": "Fontaine",
+        "rarity": 5,
+        "talents": {
+            "basic": "Targeted Treatment",
+            "skill": "Rebound Hydrotherapy",
+            "burst": "Super Saturated Syringing"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Sigewinne"
+    },
+    {
+        "name": "Sucrose",
+        "element": "Anemo",
+        "weapon": "Catalyst",
+        "region": "Mondstadt",
+        "rarity": 4,
+        "talents": {
+            "basic": "Wind Spirit Creation",
+            "skill": "Astable Anemohypostasis Creation - 6308",
+            "burst": "Forbidden Creation - Isomer 75 / Type II"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Sucrose"
+    },
+    {
+        "name": ["Ajax", "Tartaglia", "Childe"],
+        "element": "Hydro",
+        "weapon": "Bow",
+        "region": "Snezhnaya",
+        "rarity": 5,
+        "talents": {
+            "basic": "Cutting Torent",
+            "skill": "Foul Legacy: Raging Tide",
+            "burst": "Havoc: Obliteration"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Tartaglia"
+    },
+    {
+        "name": "Thoma",
+        "element": "Pyro",
+        "weapon": "Polearm",
+        "region": "Inazuma",
+        "rarity": 4,
+        "talents": {
+            "basic": "Swiftshatter Spear",
+            "skill": "Blazing Blessing",
+            "burst": "Crimson Ooyoroi"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Thoma"
+    },
+    {
+        "name": "Tighnari",
+        "element": "Dendro",
+        "weapon": "Bow",
+        "region": "Sumeru",
+        "rarity": 5,
+        "talents": {
+            "basic": "Khanda Barrier-Buster",
+            "skill": "Vijnana-Phala Mine",
+            "burst": "Fashioner's Tanglevine Shaft"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Tighnari"
+    },
+    {
+        "name": ["Traveler", "Aether", "Lumine", "Abyss Twin"],
+        "element": "N/A",
+        "weapon": "Sword",
+        "region": "N/A",
+        "rarity": 5,
+        "talents": {
+            "basic": "*Depends on Elemental Resonance*",
+            "skill": "*Depends on Elemental Resonance*",
+            "burst": "*Depends on Elemental Resonance*"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Traveler"
+    },
+    {
+        "name": ["Venti", "Barbatos"],
+        "element": "Anemo",
+        "weapon": "Bow",
+        "region": "Mondstadt",
+        "rarity": 5,
+        "archon": true,
+        "talents": {
+            "basic": "Divine Marksmanship",
+            "skill": "Skyward Sonnet",
+            "burst": "Wind's Grand Ode"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Venti"
+    },
+    {
+        "name": ["Wanderer", "Scaramouche", "The Balladeer"],
+        "element": "Anemo",
+        "weapon": "Catalyst",
+        "region": "Sumeru",
+        "rarity": 5,
+        "talents": {
+            "basic": "Yuuban Meigen",
+            "skill": "Hanega: Song of the Wind",
+            "burst": "Kyougen: Five Ceremonial Plays"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Wanderer"
+    },
+    {
+        "name": "Wriothesley",
+        "element": "Cryo",
+        "weapon": "Catalyst",
+        "region": "Fontaine",
+        "rarity": 5,
+        "talents": {
+            "basic": "Forceful Fists of Frost",
+            "skill": "Icefang Rush",
+            "burst": "Darkgold Wolfbite"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Wriothesley"
+    },
+    {
+        "name": ["Xiangling", "Mao", "Mao Xiangling", "Xiangling Mao"],
+        "element": "Pyro",
+        "weapon": "Polearm",
+        "region": "Liyue",
+        "rarity": 4,
+        "talents": {
+            "basic": "Dough-Fu",
+            "skill": "Guoba Attack",
+            "burst": "Pyronado"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Xiangling"
+    },
+    {
+        "name": "Xianyun",
+        "element": "Unknown",
+        "weapon": "Catalyst",
+        "region": "Liyue",
+        "rarity": 5,
+        "talents": {
+            "basic": "Word of Wind and Flower",
+            "skill": "White Clouds at Dawn",
+            "burst": "Stars Gather at Dusk"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Xianyun"
+    },
+    {
+        "name": "Xiao",
+        "element": "Anemo",
+        "weapon": "Polearm",
+        "region": "Liyue",
+        "rarity": 5,
+        "talents": {
+            "basic": "Whirlwind Thrust",
+            "skill": "Lemniscatic Wind Cycling",
+            "burst": "Bane of All Evil"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Xiao"
+    },
+    {
+        "name": ["Xingqiu", "Feiyun", "Feiyun Xingqiu", "Xingqiu Feiyun"],
+        "element": "Hydro",
+        "weapon": "Sword",
+        "region": "Liyue",
+        "rarity": 4,
+        "talents": {
+            "basic": "Guhua Style",
+            "skill": "Guhua Sword: Fatal Rainscreen",
+            "burst": "Guhua Sword: Raincutter"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Xingqiu"
+    },
+    {
+        "name": "Xinyan",
+        "element": "Pyro",
+        "weapon": "Claymore",
+        "region": "Liyue",
+        "rarity": 4,
+        "talents": {
+            "basic": "Dance on Fire",
+            "skill": "Sweeping Fervor",
+            "burst": "Riff Revolution"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Xinyan"
+    },
+    {
+        "name": "Yanfei",
+        "element": "Pyro",
+        "weapon": "Catalyst",
+        "region": "Liyue",
+        "rarity": 4,
+        "talents": {
+            "basic": "Seal of Approval",
+            "skill": "Signed Edict",
+            "burst": "Done Deal"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Yanfei"
+    },
+    {
+        "name": "Yaoyao",
+        "element": "Dendro",
+        "weapon": "Polearm",
+        "region": "Liyue",
+        "rarity": 4,
+        "talents": {
+            "basic": "Toss 'N' Turn Spear",
+            "skill": "Raphanus Sky Cluster",
+            "burst": "Moonjade Descent"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Yaoyao"
+    },
+    {
+        "name": "Yelan",
+        "element": "Hydro",
+        "weapon": "Bow",
+        "region": "Liyue",
+        "rarity": 5,
+        "talents": {
+            "basic": "Stealthy Bowshot",
+            "skill": "Lingering Lifeline",
+            "burst": "Depth-Clarion Dice"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Yelan"
+    },
+    {
+        "name": ["Yoimiya", "Naganohara", "Naganohara Yoimiya", "Yoimiya Naganohara"],
+        "element": "Pyro",
+        "weapon": "Bow",
+        "region": "Inazuma",
+        "rarity": 5,
+        "talents": {
+            "basic": "Firework Flare-Up",
+            "skill": "Niwabi Fire-Dance",
+            "burst": "Ryuukin Saxifrage"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Yoimiya"
+    },
+    {
+        "name": "Zhongli",
+        "element": "Geo",
+        "weapon": "Polearm",
+        "region": "Liyue",
+        "rarity": 5,
+        "archon": true,
+        "talents": {
+            "basic": "Rain of Stone",
+            "skill": "Dominus Lapidis",
+            "burst": "Planet Befall"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Zhongli"
+    }
+]
