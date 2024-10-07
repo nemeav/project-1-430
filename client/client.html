@@ -5,18 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 1 Milestone</title>
+
+    <script>
+        const init = () => {
+            // init elems
+            const randomButton = document.querySelector('#sendRandom');
+
+            // default
+            const getRandom = (e) => {
+                e.preventDefault();
+
+            }
+
+            // listeners
+            randomButton.addEventListener('click', getRandom);
+        };
+
+        window.onload = init;
+
+        // const visionSelect = document.querySelector('#vision');
+            // const visionButton = document.querySelector('#sendVisionList');
+    </script>
 </head>
 
 <body>
     <h1>Genshin Impact API</h1>
-    
+
     <div id="randomGet1">
         <h2>Random Character Information</h2>
         <p>Generate information about a random character.</p>
         <small>Fun game: Let the RNG gods decide your next main. Ehehe~</small><br><br>
         <button id="sendRandom">Get Character Info</button>
+        <section id="content1">
+        </section>
     </div>
-    
+
     <div id="visionGet2">
         <h2>Vision Roster (GET 2)</h2>
         <p>See all characters of a specific Vision.</p>
@@ -29,7 +52,7 @@
             <option value="cryo">Cryo (Ice)</option>
             <option value="geo">Geo (Earth)</option>
         </select>
-        <button id="sendvisionList">Get Characters</button>
+        <button id="sendVisionList">Get Characters</button>
     </div>
 
     <div id="talentsGet3">
@@ -38,7 +61,8 @@
         <label>Name:</label>
         <input id="nameField" type="text" name="name" />
         <button id="sendTalent">Get Talents</button><br>
-        <small>*Recommended: Use given/first name, not the family name. Either works but it gets a little funky with the Inazuman siblings/characters.</small>
+        <small>*Recommended: Use given/first name, not the family name. Either works but it gets a little funky with the
+            Inazuman siblings/characters.</small>
     </div>
 
     <div id="regionGet4">
@@ -55,14 +79,15 @@
             <option value="other">Other/Unaligned</option>
         </select>
         <button id="sendRegion">Get Regional Characters</button><br>
-        <small>*Please note: Characters are categorized by the region's Vision they hold, not necessarily their birth/residency.</small>
+        <small>*Please note: Characters are categorized by the region's Vision they hold, not necessarily their
+            birth/residency.</small>
     </div>
 
     <div id="characterAddPost1">
         <h2>Create a New Character (POST 1)</h2>
         <label>Character Details </label><br>
         <label>Name: </label>
-        <input id="name" type="text" newName="newName"/><br>
+        <input id="name" type="text" newName="newName" /><br>
         <label>Vision: </label>
         <select id="vision" vision="vision">
             <option value="pyro">Pyro (Fire)</option>
@@ -92,15 +117,15 @@
             <option value="Liyue">Liyue</option>
         </select>
         <label>Rarity (star count): </label>
-        <input id="rarity" type="number" min="4" max="5" step="1" rarity="rarity"/>
+        <input id="rarity" type="number" min="4" max="5" step="1" rarity="rarity" />
         <hr>
         <label>Assign Talents </label><br>
         <label>Basic: </label>
-        <input id="basic" type="text" basic="basic"/>
+        <input id="basic" type="text" basic="basic" />
         <label>Skill: </label>
-        <input id="skill" type="text" skill="skill"/>
+        <input id="skill" type="text" skill="skill" />
         <label>Burst: </label>
-        <input id="burst" type="text" burst="burst"/>
+        <input id="burst" type="text" burst="burst" />
         <button id="sendCharacter">Submit Character</button>
     </div>
 
@@ -108,7 +133,7 @@
         <h2>Edit Existing Character (POST 2)</h2>
         <label>Character Details </label><br>
         <label>Name: </label>
-        <input id="name" type="text" newName="editName"/><br>
+        <input id="name" type="text" newName="editName" /><br>
         <label>Vision: </label>
         <select id="vision" vision="editVision">
             <option value="pyro">Pyro (Fire)</option>
@@ -138,18 +163,18 @@
             <option value="Liyue">Liyue</option>
         </select>
         <label>Rarity (star count): </label>
-        <input id="rarity" type="number" min="4" max="5" step="1" rarity="editRarity"/>
+        <input id="rarity" type="number" min="4" max="5" step="1" rarity="editRarity" />
         <hr>
         <label>Assign Talents </label><br>
         <label>Basic: </label>
-        <input id="basic" type="text" basic="editBasic"/>
+        <input id="basic" type="text" basic="editBasic" />
         <label>Skill: </label>
-        <input id="skill" type="text" skill="editSkill"/>
+        <input id="skill" type="text" skill="editSkill" />
         <label>Burst: </label>
-        <input id="burst" type="text" burst="editBurst"/>
+        <input id="burst" type="text" burst="editBurst" />
         <button id="sendCharacter">Update Character</button>
     </div>
-    
+
 </body>
 
 </html>
