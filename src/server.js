@@ -46,7 +46,10 @@ const onRequest = (request, response) => {
   const parsedUrl = new URL(request.url, `${protocol}://${request.headers.host}`);
 
   // check for methods to call proper funcs
-  if (request.method === 'POST' && urlStruct[parsedUrl.pathname]) {
+  if (request.method === 'HEAD' && urlStruct[parsedUrl.pathname]) {
+    response.writeHead(200);
+    response.end();
+  } else if (request.method === 'POST' && urlStruct[parsedUrl.pathname]) {
     parseBody(request, response, urlStruct[parsedUrl.pathname]);
   } else if (request.method === 'GET' && urlStruct[parsedUrl.pathname]) {
     urlStruct[parsedUrl.pathname](request, response);

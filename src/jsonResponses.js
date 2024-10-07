@@ -4,29 +4,28 @@ const url = require('url');
 // files
 const genshinData = JSON.parse(fs.readFileSync(`${__dirname}/../data/characters.json`));
 // variables used by multiple funcs
-let statusCode = 200;
+let statusCode;
+// FUTURE NOTE: MIGHT INIT responseJSON UP HERE
 
+// create header and update length for data, type
 const respondJSON = (request, response, status, object) => {
   const content = JSON.stringify(object);
   response.writeHead(status, {
     'Content-Type': 'application/json',
     'Content-Length': Buffer.byteLength(content, 'utf8'),
   });
-
-  response.write(content);
+  // get vs head differentiation
+  if (request.method !== 'HEAD' && status !== 204) {
+    response.write(content);
+  }
   response.end();
 };
 
 // end points
 // random character generator
 const getRandom = (request, response) => {
-  const randomNum = Math.floor(Math.random() * 89);
-  const randomChar = genshinData[randomNum];
-  const responseJSON = {
-    randomChar,
-
-    message: 'This is a successful response',
-  };
+  const randomNum = Math.floor(Math.random() * (genshinData.length - 1));
+  const responseJSON = genshinData[randomNum];
   respondJSON(request, response, 200, responseJSON);
 };
 
@@ -35,6 +34,7 @@ const getVisions = (request, response) => {
   const parsedUrl = url.parse(request.url, true);
   const { query } = parsedUrl;
   let responseJSON;
+  statusCode = 200;
   // send data based on query param in endpoint
   switch (query.vision) {
     case 'pyro':
@@ -61,7 +61,7 @@ const getVisions = (request, response) => {
     default:
       responseJSON = {
         message: 'Invalid parameter. Enter a valid vision element.',
-        id: 'badRequest',
+        id: 'invalidVisionParam',
       };
       statusCode = 400;
   }
@@ -92,7 +92,9 @@ const getRegion = (request, response) => {
   const parsedUrl = url.parse(request.url, true);
   const { query } = parsedUrl;
   let responseJSON;
+  statusCode = 200; // FUTURE NOTE: might init this up top as default
   // send data based on query param in endpoint
+  // FUTURE NOTE: might have to lowercase params here and in index
   switch (query.region) {
     case 'Mondstadt':
       responseJSON = genshinData.filter((char) => char.region === 'Mondstadt');
@@ -121,7 +123,7 @@ const getRegion = (request, response) => {
     default:
       responseJSON = {
         message: 'Invalid parameter. Enter a valid region.',
-        id: 'badRequest',
+        id: 'invalidRegionParam',
       };
       statusCode = 400;
   }
@@ -136,7 +138,7 @@ const addChar = (request, response) => {
   } = request.body;
   // checks if the user created a valid character, handles accordingly
   if (newName && vision && weapon && region && rarity && basic && skill && burst) {
-    responseJSON.message = 'Created';
+    responseJSON.message = 'Created successfully';
     statusCode = 201;
     genshinData[newName] = {
       name: newName,
@@ -166,7 +168,7 @@ const editChar = (request, response) => {
   } = request.body;
   // checks if the user created a valid character, handles accordingly
   if (genshinData[editName]) {
-    responseJSON.message = 'Updated Successfully';
+    responseJSON.message = 'Updated Successfully. No content to display';
     statusCode = 204;
     genshinData[editName] = {
       vision: editVision,
@@ -183,8 +185,9 @@ const editChar = (request, response) => {
       id: 'invalidName',
     };
     statusCode = 400;
+    return respondJSON(request, response, statusCode, respondJSON);
   }
-  return respondJSON(request, response, statusCode, responseJSON);
+  return respondJSON(request, response, statusCode, {});
 };
 
 // error page
