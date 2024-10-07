@@ -11,6 +11,10 @@ const urlStruct = {
   '/': htmlHandler.getIndex,
   '/getRandom': jsonHandler.getRandom,
   '/getVisions': jsonHandler.getVisions,
+  '/getRegion': jsonHandler.getRegion,
+  '/getTalents': jsonHandler.getTalents,
+  '/addChar': jsonHandler.addChar,
+  '/editChar': jsonHandler.editChar,
 };
 
 // handles/organizes body packets

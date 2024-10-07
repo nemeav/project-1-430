@@ -1,4 +1,18 @@
 [
+    
+    {
+        "name": ["Aether", "Traveler (Male)", "Abyss Twin (Male)"],
+        "vision": "N/A",
+        "weapon": "Sword",
+        "region": "N/A",
+        "rarity": 5,
+        "talents": {
+            "basic": "*Depends on Elemental Resonance*",
+            "skill": "*Depends on Elemental Resonance*",
+            "burst": "*Depends on Elemental Resonance*"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Traveler"
+    },
     {
         "name": "Albedo",
         "vision": "Geo",
@@ -52,7 +66,20 @@
         "link": "https://genshin-impact.fandom.com/wiki/Amber"
     },
     {
-        "name": ["Arlecchino", "Peruere", "Shnezevna", "Arlecchino Shnezevna", "The Knave"],
+        "name": ["Arataki Itto", "Itto", "Arataki", "Itto Arataki"],
+        "vision": "Geo",
+        "weapon": "Claymore",
+        "region": "Inazuma",
+        "rarity": 5,
+        "talents": {
+            "basic": "Fight Club Legend",
+            "skill": "Masatsu Zetsugi: Akaushi Burst!",
+            "burst": "Royal Descent: Behold, Itto the Evil!"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Arataki_Itto"
+    },
+    {
+        "name": ["Arlecchino", "Peruere", "Shnezevna", "Peruere Shnezevna", "The Knave"],
         "vision": "Pyro",
         "weapon": "Polearm",
         "region": "Snezhnaya",
@@ -63,32 +90,6 @@
             "burst": "Balemoon Rising"
         },
         "link": "https://genshin-impact.fandom.com/wiki/Arlecchino"
-    },
-    {
-        "name": ["Ayaka", "Kamisato", "Kamisato Ayaka", "Ayaka Kamisato"],
-        "vision": "Cryo",
-        "weapon": "Sword",
-        "region": "Inazuma",
-        "rarity": 5,
-        "talents": {
-            "basic": "Kamisato Art: Kabuki",
-            "skill": "Kamisato Art: Hyouka",
-            "burst": "Kamisato Art: Soumetsu"
-        },
-        "link": "https://genshin-impact.fandom.com/wiki/Kamisato_Ayaka"
-    },
-    {
-        "name": ["Ayato", "Kamisato", "Kamisato Ayato", "Ayato Kamisato"],
-        "vision": "Hydro",
-        "weapon": "Sword",
-        "region": "Inazuma",
-        "rarity": 5,
-        "talents": {
-            "basic": "Kamisato Art: Marobashi",
-            "skill": "Kamisato Art: Kyouka",
-            "burst": "Kamisato Art: Suiyuu"
-        },
-        "link": "https://genshin-impact.fandom.com/wiki/Kamisato_Ayato"
     },
     {
         "name": "Baizhu",
@@ -104,7 +105,7 @@
         "link": "https://genshin-impact.fandom.com/wiki/Baizhu"
     },
     {
-        "name": ["Barbara", "Pegg", "Gunnhildr", "Barbara Pegg"],
+        "name": ["Barbara", "Pegg", "Barbara Pegg"],
         "vision": "Hydro",
         "weapon": "Catalyst",
         "region": "Mondstadt",
@@ -417,19 +418,6 @@
         "link": "https://genshin-impact.fandom.com/wiki/Gorou"
     },
     {
-        "name": ["Heizou", "Shikanoin", "Shikanoin Heizou", "Heizou Shikanoin"],
-        "vision": "Anemo",
-        "weapon": "Catalyst",
-        "region": "Inazuma",
-        "rarity": 4,
-        "talents": {
-            "basic": "Fudou Style Martial Arts",
-            "skill": "Heartstopper Strike",
-            "burst": "Windmuster Kick"
-        },
-        "link": "https://genshin-impact.fandom.com/wiki/Shikanoin_Heizou"
-    },
-    {
         "name": ["Hu Tao", "Tao", "Hu", "Tao Hu"],
         "vision": "Pyro",
         "weapon": "Polearm",
@@ -443,20 +431,7 @@
         "link": "https://genshin-impact.fandom.com/wiki/Hu_Tao"
     },
     {
-        "name": ["Itto", "Arataki", "Arataki Itto", "Itto Arataki"],
-        "vision": "Geo",
-        "weapon": "Claymore",
-        "region": "Inazuma",
-        "rarity": 5,
-        "talents": {
-            "basic": "Fight Club Legend",
-            "skill": "Masatsu Zetsugi: Akaushi Burst!",
-            "burst": "Royal Descent: Behold, Itto the Evil!"
-        },
-        "link": "https://genshin-impact.fandom.com/wiki/Arataki_Itto"
-    },
-    {
-        "name": ["Jean", "Gunnhildr", "Pegg", "Jean Gunnhildr"],
+        "name": ["Jean", "Gunnhildr", "Jean Gunnhildr"],
         "vision": "Anemo",
         "weapon": "Sword",
         "region": "Mondstadt",
@@ -469,7 +444,7 @@
         "link": "https://genshin-impact.fandom.com/wiki/Jean"
     },
     {
-        "name": ["Jin", "Yun", "Yun Jin", "Jin Yun"],
+        "name": ["Yun Jin", "Jin", "Yun", "Jin Yun"],
         "vision": "Geo",
         "weapon": "Polearm",
         "region": "Liyue",
@@ -495,6 +470,19 @@
         "link": "https://genshin-impact.fandom.com/wiki/Kachina"
     },
     {
+        "name": [ "Kaedehara Kazuha", "Kazuha", "Kaedehara", "Kazuha Kaedehara"],
+        "vision": "Anemo",
+        "weapon": "Sword",
+        "region": "Inazuma",
+        "rarity": 5,
+        "talents": {
+            "basic": "Garyuu Bladework",
+            "skill": "Chihayaburu",
+            "burst": "Kazuha Slash"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Kaedehara_Kazuha"
+    },
+    {
         "name": ["Kaeya", "Alberich", "Kaeya Alberich"],
         "vision": "Cryo",
         "weapon": "Sword",
@@ -508,6 +496,32 @@
         "link": "https://genshin-impact.fandom.com/wiki/Kaeya"
     },
     {
+        "name": [ "Kamisato Ayaka", "Ayaka", "Kamisato", "Ayaka Kamisato"],
+        "vision": "Cryo",
+        "weapon": "Sword",
+        "region": "Inazuma",
+        "rarity": 5,
+        "talents": {
+            "basic": "Kamisato Art: Kabuki",
+            "skill": "Kamisato Art: Hyouka",
+            "burst": "Kamisato Art: Soumetsu"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Kamisato_Ayaka"
+    },
+    {
+        "name": [ "Kamisato Ayato", "Ayato", "Kamisato", "Ayato Kamisato"],
+        "vision": "Hydro",
+        "weapon": "Sword",
+        "region": "Inazuma",
+        "rarity": 5,
+        "talents": {
+            "basic": "Kamisato Art: Marobashi",
+            "skill": "Kamisato Art: Kyouka",
+            "burst": "Kamisato Art: Suiyuu"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Kamisato_Ayato"
+    },
+    {
         "name": "Kaveh",
         "vision": "Dendro",
         "weapon": "Claymore",
@@ -519,19 +533,6 @@
             "burst": "Painted Dome"
         },
         "link": "https://genshin-impact.fandom.com/wiki/Kaveh"
-    },
-    {
-        "name": ["Kazuha", "Kaedehara", "Kaedehara Kazuha", "Kazuha Kaedehara"],
-        "vision": "Anemo",
-        "weapon": "Sword",
-        "region": "Inazuma",
-        "rarity": 5,
-        "talents": {
-            "basic": "Garyuu Bladework",
-            "skill": "Chihayaburu",
-            "burst": "Kazuha Slash"
-        },
-        "link": "https://genshin-impact.fandom.com/wiki/Kaedehara_Kazuha"
     },
     {
         "name": "Keqing",
@@ -586,17 +587,30 @@
         "link": "https://genshin-impact.fandom.com/wiki/Klee"
     },
     {
-        "name": ["Kokomi", "Sangonomiya", "Sangonomiya Kokomi", "Kokomi Sangonomoiya"],
-        "vision": "Hydro",
-        "weapon": "Catalyst",
+        "name": ["Kujou Sara", "Sara", "Kujou", "Sara Kujou"],
+        "vision": "Electro",
+        "weapon": "Bow",
         "region": "Inazuma",
-        "rarity": 5,
+        "rarity": 4,
         "talents": {
-            "basic": "The Shape of Water",
-            "skill": "Kurage's Oath",
-            "burst": "Nereid's Ascension"
+            "basic": "Tengu Bowmanship",
+            "skill": "Tengu Stromcall",
+            "burst": "Subjugation: Koukou Sendou"
         },
-        "link": "https://genshin-impact.fandom.com/wiki/Sangonomiya_Kokomi"
+        "link": "https://genshin-impact.fandom.com/wiki/Kujou_Sara"
+    },
+    {
+        "name": ["Kuki Shinobu", "Shinobu", "Kuki", "Shinobu Kuki"],
+        "vision": "Electro",
+        "weapon": "Sword",
+        "region": "Inazuma",
+        "rarity": 4,
+        "talents": {
+            "basic": "Shinobu's Shadowsword",
+            "skill": "Sanctifying Ring",
+            "burst": "Gyoei Narukami Kariyama Rite"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Kuki_Shinobu"
     },
     {
         "name": "Layla",
@@ -623,6 +637,19 @@
             "burst": "Lightning Rose"
         },
         "link": "https://genshin-impact.fandom.com/wiki/Lisa"
+    },
+    {
+        "name": ["Lumine", "Traveler (Female)", "Abyss Twin (Female)"],
+        "vision": "N/A",
+        "weapon": "Sword",
+        "region": "N/A",
+        "rarity": 5,
+        "talents": {
+            "basic": "*Depends on Elemental Resonance*",
+            "skill": "*Depends on Elemental Resonance*",
+            "burst": "*Depends on Elemental Resonance*"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Traveler"
     },
     {
         "name": ["Lynette", "Shnezevna", "Lynette Shnezevna"],
@@ -662,20 +689,7 @@
             "burst": "Skyfeather Song"
         },
         "link": "https://genshin-impact.fandom.com/wiki/Mika"
-    },
-    {
-        "name": ["Miko", "Yae", "Yae Miko", "Miko Yae"],
-        "vision": "Electro",
-        "weapon": "Catalyst",
-        "region": "Inazuma",
-        "rarity": 5,
-        "talents": {
-            "basic": "Spiritfox Sin-Eater",
-            "skill": "Yakan Evocation: Sesshou Sakura",
-            "burst": "Great Secret Art: Tenko Kenshin"
-        },
-        "link": "https://genshin-impact.fandom.com/wiki/Yae_Miko"
-    },    
+    },   
     {
         "name": ["Mona", "Megistus", "Mona Megistus"],
         "vision": "Hydro",
@@ -835,17 +849,17 @@
         "link": "https://genshin-impact.fandom.com/wiki/Rosaria"
     },
     {
-        "name": ["Sara", "Kujou", "Kujou Sara", "Sara Kujou"],
-        "vision": "Electro",
-        "weapon": "Bow",
+        "name": ["Sangonomiya Kokomi", "Kokomi", "Sangonomiya", "Kokomi Sangonomoiya"],
+        "vision": "Hydro",
+        "weapon": "Catalyst",
         "region": "Inazuma",
-        "rarity": 4,
+        "rarity": 5,
         "talents": {
-            "basic": "Tengu Bowmanship",
-            "skill": "Tengu Stromcall",
-            "burst": "Subjugation: Koukou Sendou"
+            "basic": "The Shape of Water",
+            "skill": "Kurage's Oath",
+            "burst": "Nereid's Ascension"
         },
-        "link": "https://genshin-impact.fandom.com/wiki/Kujou_Sara"
+        "link": "https://genshin-impact.fandom.com/wiki/Sangonomiya_Kokomi"
     },
     {
         "name": "Sayu",
@@ -887,17 +901,17 @@
         "link": "https://genshin-impact.fandom.com/wiki/Shenhe"
     },
     {
-        "name": ["Shinobu", "Kuki", "Kuki Shinobu", "Shinobu Kuki"],
-        "vision": "Electro",
-        "weapon": "Sword",
+        "name": ["Shikanoin Heizou", "Heizou", "Shikanoin", "Heizou Shikanoin"],
+        "vision": "Anemo",
+        "weapon": "Catalyst",
         "region": "Inazuma",
         "rarity": 4,
         "talents": {
-            "basic": "Shinobu's Shadowsword",
-            "skill": "Sanctifying Ring",
-            "burst": "Gyoei Narukami Kariyama Rite"
+            "basic": "Fudou Style Martial Arts",
+            "skill": "Heartstopper Strike",
+            "burst": "Windmuster Kick"
         },
-        "link": "https://genshin-impact.fandom.com/wiki/Kuki_Shinobu"
+        "link": "https://genshin-impact.fandom.com/wiki/Shikanoin_Heizou"
     },
     {
         "name": "Sigewinne",
@@ -926,7 +940,7 @@
         "link": "https://genshin-impact.fandom.com/wiki/Sucrose"
     },
     {
-        "name": ["Ajax", "Tartaglia", "Childe"],
+        "name": ["Tartaglia", "Ajax", "Childe"],
         "vision": "Hydro",
         "weapon": "Bow",
         "region": "Snezhnaya",
@@ -963,19 +977,6 @@
             "burst": "Fashioner's Tanglevine Shaft"
         },
         "link": "https://genshin-impact.fandom.com/wiki/Tighnari"
-    },
-    {
-        "name": ["Traveler", "Aether", "Lumine", "Abyss Twin"],
-        "vision": "N/A",
-        "weapon": "Sword",
-        "region": "N/A",
-        "rarity": 5,
-        "talents": {
-            "basic": "*Depends on Elemental Resonance*",
-            "skill": "*Depends on Elemental Resonance*",
-            "burst": "*Depends on Elemental Resonance*"
-        },
-        "link": "https://genshin-impact.fandom.com/wiki/Traveler"
     },
     {
         "name": ["Venti", "Barbatos"],
@@ -1081,6 +1082,19 @@
             "burst": "Riff Revolution"
         },
         "link": "https://genshin-impact.fandom.com/wiki/Xinyan"
+    },
+    {
+        "name": ["Yae Miko", "Miko", "Yae", "Miko Yae"],
+        "vision": "Electro",
+        "weapon": "Catalyst",
+        "region": "Inazuma",
+        "rarity": 5,
+        "talents": {
+            "basic": "Spiritfox Sin-Eater",
+            "skill": "Yakan Evocation: Sesshou Sakura",
+            "burst": "Great Secret Art: Tenko Kenshin"
+        },
+        "link": "https://genshin-impact.fandom.com/wiki/Yae_Miko"
     },
     {
         "name": "Yanfei",
