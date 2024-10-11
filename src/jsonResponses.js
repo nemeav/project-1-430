@@ -1,6 +1,5 @@
 // mods
 const fs = require('fs');
-const url = require('url');
 // files
 const genshinData = JSON.parse(fs.readFileSync(`${__dirname}/../data/characters.json`));
 // variables used by multiple funcs
@@ -31,40 +30,11 @@ const getRandom = (request, response) => {
 
 // get chars by vision type
 const getVisions = (request, response) => {
-  const parsedUrl = url.parse(request.url, true);
-  const { query } = parsedUrl;
-  let responseJSON;
   statusCode = 200;
   // send data based on query param in endpoint
-  switch (query.vision) {
-    case 'pyro':
-      responseJSON = genshinData.filter((char) => char.vision === 'Pyro');
-      break;
-    case 'hydro':
-      responseJSON = genshinData.filter((char) => char.vision === 'Hydro');
-      break;
-    case 'anemo':
-      responseJSON = genshinData.filter((char) => char.vision === 'Anemo');
-      break;
-    case 'electro':
-      responseJSON = genshinData.filter((char) => char.vision === 'Electro');
-      break;
-    case 'dendro':
-      responseJSON = genshinData.filter((char) => char.vision === 'Dendro');
-      break;
-    case 'cryo':
-      responseJSON = genshinData.filter((char) => char.vision === 'Cryo');
-      break;
-    case 'geo':
-      responseJSON = genshinData.filter((char) => char.vision === 'Geo');
-      break;
-    default:
-      responseJSON = {
-        message: 'Invalid parameter. Enter a valid vision element.',
-        id: 'invalidVisionParam',
-      };
-      statusCode = 400;
-  }
+  request.query.vision = request.query.vision.charAt(0).toUpperCase()
+    + request.query.vision.slice(1).toLowerCase();
+  const responseJSON = genshinData.filter((char) => char.vision === request.query.vision);
   respondJSON(request, response, statusCode, responseJSON);
 };
 
@@ -89,44 +59,13 @@ const getTalents = (request, response) => {
 
 // get characters by their (vision) region
 const getRegion = (request, response) => {
-  const parsedUrl = url.parse(request.url, true);
-  const { query } = parsedUrl;
-  let responseJSON;
   statusCode = 200; // FUTURE NOTE: might init this up top as default
   // send data based on query param in endpoint
   // FUTURE NOTE: might have to lowercase params here and in index
-  switch (query.region) {
-    case 'Mondstadt':
-      responseJSON = genshinData.filter((char) => char.region === 'Mondstadt');
-      break;
-    case 'Liyue':
-      responseJSON = genshinData.filter((char) => char.region === 'Liyue');
-      break;
-    case 'Inazuma':
-      responseJSON = genshinData.filter((char) => char.region === 'Inazuma');
-      break;
-    case 'Sumeru':
-      responseJSON = genshinData.filter((char) => char.region === 'Sumeru');
-      break;
-    case 'Fontaine':
-      responseJSON = genshinData.filter((char) => char.region === 'Fontaine');
-      break;
-    case 'Natlan':
-      responseJSON = genshinData.filter((char) => char.region === 'Natlan');
-      break;
-    case 'Snezhnaya':
-      responseJSON = genshinData.filter((char) => char.region === 'Snezhnaya');
-      break;
-    case 'other':
-      responseJSON = genshinData.filter((char) => char.region === 'N/A');
-      break;
-    default:
-      responseJSON = {
-        message: 'Invalid parameter. Enter a valid region.',
-        id: 'invalidRegionParam',
-      };
-      statusCode = 400;
-  }
+  request.query.region = request.query.region.charAt(0).toUpperCase()
+    + request.query.region.slice(1).toLowerCase();
+
+  const responseJSON = genshinData.filter((char) => char.region === request.query.region);
   respondJSON(request, response, statusCode, responseJSON);
 };
 

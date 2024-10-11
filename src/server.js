@@ -45,6 +45,8 @@ const onRequest = (request, response) => {
   const protocol = request.connection.encrypted ? 'https' : 'http';
   const parsedUrl = new URL(request.url, `${protocol}://${request.headers.host}`);
 
+  request.query = Object.fromEntries(parsedUrl.searchParams);
+
   // check for methods to call proper funcs
   if (request.method === 'HEAD' && urlStruct[parsedUrl.pathname]) {
     response.writeHead(200);

@@ -7,31 +7,138 @@
     <title>Project 1 Milestone</title>
 
     <script>
-        const init = () => {
-            // init elems
-            const randomButton = document.querySelector('#sendRandom');
+        // fetch
+        const handleResponse = async (response, section) => {
+            const content = document.querySelector(`${section}`);
+            const resText = await response.text();
 
-            // default
-            const getRandom = (e) => {
-                e.preventDefault();
-
+            // handle page based on response
+            const parsedResponse = JSON.parse(resText);
+            //only show users for /getUsers + GET
+            if (response.method !== 'HEAD' && response.status === 200) {
+                content.innerHTML += `<p>${JSON.stringify(parsedResponse.users)}</p>`;
+            }
+            if (parsedResponse.message) {
+                content.innerHTML += `<p>Message: ${parsedResponse.message}</p>`;
             }
 
-            // listeners
-            randomButton.addEventListener('click', getRandom);
+            console.log(parsedResponse, section);
+
+            // clear for clarity - not sure if necessary though...
+            content.innerText = '';
+
+            // header titles based on status code
+            switch (response.status) {
+                case 200:
+                    content.innerText = JSON.stringify(parsedResponse);
+                    break;
+                case 201:
+                    content.innerHTML = '<b>Created</b>';
+                    break;
+                case 204:
+                    content.innerHTML = '<b>Updated (No Content)</b>';
+                    return;
+                case 400:
+                    content.innerText = `<b>Bad Request</b>`;
+                    break;
+                case 404:
+                default:
+                    content.innerText = `<b>Not Found</b>`;
+                    break;
+            }
+        };
+
+        // manage post
+        const sendPost = async (nameForm) => {
+            const url = nameForm.getAttribute('action');
+            const method = nameForm.getAttribute('method');
+
+            const nameField = nameForm.querySelector('#nameField');
+            const ageField = nameForm.querySelector('#ageField');
+
+            const formData = `name=${nameField.value}&age=${ageField.value}`;
+
+            let response = await fetch(url, {
+                method: method,
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                    'Accept': 'application/json',
+                },
+                body: formData,
+            });
+
+            handleResponse(response);
+        };
+
+        // get/head requests
+        const sendGetHead = async (div, section, formData) => {
+            let url = div.getAttribute('action');
+            if (formData) {
+                url += formData;
+            }
+            console.log(url)
+            const method = div.getAttribute('method');
+            let response = await fetch(url, {
+                method: method,
+                headers: {
+                    'Accept': 'application/json',
+                },
+            });
+
+            response.method = method;
+            handleResponse(response, section);
+        };
+
+        // setup for init
+        const init = () => {
+            // elems for random
+            const randomDiv = document.querySelector('#randomGet1');
+            const randomButton = document.querySelector('#sendRandom')
+            // for vision
+            const visionSelect = document.querySelector('#vision');
+            const visionButton = document.querySelector('#sendVisionList');
+
+            // PREVENT DEFAULT ACTIONS FOR EACH METHOD
+            // get/head funcs
+            const fetchRandom = (e) => {
+                e.preventDefault();
+                sendGetHead(randomDiv, '#content1');
+                return false;
+            };
+
+            const fetchVision = (e) => {
+                e.preventDefault();
+                sendGetHead(visionSelect, '#content2', `vision=${visionSelect.value}`);
+                return false;
+            };
+
+            // post
+            const addUser = (e) => {
+                e.preventDefault();
+                sendPost(nameForm);
+                return false;
+            };
+
+            // listener connectors
+            // random
+            randomDiv.addEventListener('submit', fetchRandom);
+            randomButton.addEventListener('click', fetchRandom);
+            // vision
+            visionSelect.addEventListener('submit', fetchVision);
+            visionButton.addEventListener('click', fetchVision);
         };
 
         window.onload = init;
 
         // const visionSelect = document.querySelector('#vision');
-            // const visionButton = document.querySelector('#sendVisionList');
+        // const visionButton = document.querySelector('#sendVisionList');
     </script>
 </head>
 
 <body>
     <h1>Genshin Impact API</h1>
 
-    <div id="randomGet1">
+    <div id="randomGet1" action="/getRandom" method="GET">
         <h2>Random Character Information</h2>
         <p>Generate information about a random character.</p>
         <small>Fun game: Let the RNG gods decide your next main. Ehehe~</small><br><br>
@@ -40,7 +147,7 @@
         </section>
     </div>
 
-    <div id="visionGet2">
+    <div id="visionGet2"  action="/getVisions" method="GET">
         <h2>Vision Roster (GET 2)</h2>
         <p>See all characters of a specific Vision.</p>
         <select id="vision">
@@ -53,6 +160,8 @@
             <option value="geo">Geo (Earth)</option>
         </select>
         <button id="sendVisionList">Get Characters</button>
+        <section id="content2">
+        </section>
     </div>
 
     <div id="talentsGet3">
