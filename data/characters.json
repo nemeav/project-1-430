@@ -1,7 +1,8 @@
 [
     
     {
-        "name": ["Aether", "Traveler (Male)", "Abyss Twin (Male)"],
+        "name": "Aether",
+        "alternate names": ["Traveler (Male)", "Abyss Twin (Male)"],
         "vision": "N/A",
         "weapon": "Sword",
         "region": "N/A",
@@ -66,7 +67,8 @@
         "link": "https://genshin-impact.fandom.com/wiki/Amber"
     },
     {
-        "name": ["Arataki Itto", "Itto", "Arataki", "Itto Arataki"],
+        "name": "Arataki Itto",
+        "alternate names": ["Itto", "Arataki", "Itto Arataki"],
         "vision": "Geo",
         "weapon": "Claymore",
         "region": "Inazuma",
@@ -79,7 +81,8 @@
         "link": "https://genshin-impact.fandom.com/wiki/Arataki_Itto"
     },
     {
-        "name": ["Arlecchino", "Peruere", "Shnezevna", "Peruere Shnezevna", "The Knave"],
+        "name": "Arlecchino",
+        "alternate names": ["Peruere", "Shnezevna", "Peruere Shnezevna", "The Knave"],
         "vision": "Pyro",
         "weapon": "Polearm",
         "region": "Snezhnaya",
@@ -105,7 +108,8 @@
         "link": "https://genshin-impact.fandom.com/wiki/Baizhu"
     },
     {
-        "name": ["Barbara", "Pegg", "Barbara Pegg"],
+        "name": "Barbara",
+        "alternate names": ["Pegg", "Barbara Pegg"],
         "vision": "Hydro",
         "weapon": "Catalyst",
         "region": "Mondstadt",
@@ -261,7 +265,8 @@
         "link": "https://genshin-impact.fandom.com/wiki/Dehya"
     },
     {
-        "name": ["Diluc", "Ragnvindr", "Diluc Ragnvindr"],
+        "name": "Diluc",
+        "alternate names":["Ragnvindr", "Diluc Ragnvindr"],
         "vision": "Pyro",
         "weapon": "Claymore",
         "region": "Mondstadt",
@@ -274,7 +279,8 @@
         "link": "https://genshin-impact.fandom.com/wiki/Diluc"
     },
     {
-        "name": ["Diona", "Kätzlein", "Diona Kätzlein"],
+        "name": "Diona",
+        "alternate names": ["Kätzlein", "Diona Kätzlein"],
         "vision": "Cryo",
         "weapon": "Bow",
         "region": "Mondstadt",
@@ -313,7 +319,8 @@
         "link": "https://genshin-impact.fandom.com/wiki/Emilie"
     },
     {
-        "name": ["Eula", "Lawrence", "Eula Lawrence"],
+        "name": "Eula",
+        "alternate names":["Lawrence", "Eula Lawrence"],
         "vision": "Cryo",
         "weapon": "Claymore",
         "region": "Mondstadt",
@@ -339,7 +346,8 @@
         "link": "https://genshin-impact.fandom.com/wiki/Faruzan"
     },
     {
-        "name": ["Fischl", "von Luftschloss Narfidort", "Fischl von Luftschloss Narfidort", "Amy"],
+        "name": "Fischl",
+        "alternate names":["von Luftschloss Narfidort", "Fischl von Luftschloss Narfidort", "Amy"],
         "vision": "Electro",
         "weapon": "Bow",
         "region": "Mondstadt",
@@ -352,7 +360,8 @@
         "link": "https://genshin-impact.fandom.com/wiki/Fischl"
     },
     {
-        "name": ["Freminet", "Shnezevich", "Freminet Shnezevich"],
+        "name": "Freminet",
+        "alternate names":["Shnezevich", "Freminet Shnezevich"],
         "vision": "Cryo",
         "weapon": "Claymore",
         "region": "Fontaine",
@@ -379,7 +388,8 @@
         "link": "https://genshin-impact.fandom.com/wiki/Furina"
     },
     {
-        "name": ["Gaming", "Yip", "Yip Gaming", "Gaming Yip"],
+        "name": "Gaming",
+        "alternate names":["Yip", "Yip Gaming", "Gaming Yip"],
         "vision": "Pyro",
         "weapon": "Claymore",
         "region": "Liyue",
@@ -418,7 +428,8 @@
         "link": "https://genshin-impact.fandom.com/wiki/Gorou"
     },
     {
-        "name": ["Hu Tao", "Tao", "Hu", "Tao Hu"],
+        "name": "Hu Tao",
+        "alternate names":["Tao", "Hu", "Tao Hu"],
         "vision": "Pyro",
         "weapon": "Polearm",
         "region": "Liyue",
@@ -431,7 +442,8 @@
         "link": "https://genshin-impact.fandom.com/wiki/Hu_Tao"
     },
     {
-        "name": ["Jean", "Gunnhildr", "Jean Gunnhildr"],
+        "name": "Jean",
+        "alternate names":["Gunnhildr", "Jean Gunnhildr"],
         "vision": "Anemo",
         "weapon": "Sword",
         "region": "Mondstadt",
@@ -444,7 +456,8 @@
         "link": "https://genshin-impact.fandom.com/wiki/Jean"
     },
     {
-        "name": ["Yun Jin", "Jin", "Yun", "Jin Yun"],
+        "name": "Yun Jin",
+        "alternate names":["Jin", "Yun", "Jin Yun"],
         "vision": "Geo",
         "weapon": "Polearm",
         "region": "Liyue",
@@ -470,7 +483,8 @@
         "link": "https://genshin-impact.fandom.com/wiki/Kachina"
     },
     {
-        "name": [ "Kaedehara Kazuha", "Kazuha", "Kaedehara", "Kazuha Kaedehara"],
+        "name": "Kaedehara Kazuha",
+        "alternate names":["Kazuha", "Kaedehara", "Kazuha Kaedehara"],
         "vision": "Anemo",
         "weapon": "Sword",
         "region": "Inazuma",
@@ -483,7 +497,8 @@
         "link": "https://genshin-impact.fandom.com/wiki/Kaedehara_Kazuha"
     },
     {
-        "name": ["Kaeya", "Alberich", "Kaeya Alberich"],
+        "name": "Kaeya",
+        "alternate names":["Alberich", "Kaeya Alberich"],
         "vision": "Cryo",
         "weapon": "Sword",
         "region": "Mondstadt",
@@ -496,7 +511,8 @@
         "link": "https://genshin-impact.fandom.com/wiki/Kaeya"
     },
     {
-        "name": [ "Kamisato Ayaka", "Ayaka", "Kamisato", "Ayaka Kamisato"],
+        "name": "Kamisato Ayaka",
+        "alternate names":["Ayaka", "Kamisato", "Ayaka Kamisato"],
         "vision": "Cryo",
         "weapon": "Sword",
         "region": "Inazuma",
@@ -509,7 +525,8 @@
         "link": "https://genshin-impact.fandom.com/wiki/Kamisato_Ayaka"
     },
     {
-        "name": [ "Kamisato Ayato", "Ayato", "Kamisato", "Ayato Kamisato"],
+        "name": "Kamisato Ayato",
+        "alternate names":["Ayato", "Kamisato", "Ayato Kamisato"],
         "vision": "Hydro",
         "weapon": "Sword",
         "region": "Inazuma",
@@ -587,7 +604,8 @@
         "link": "https://genshin-impact.fandom.com/wiki/Klee"
     },
     {
-        "name": ["Kujou Sara", "Sara", "Kujou", "Sara Kujou"],
+        "name": "Kujou Sara",
+        "alternate names":["Sara", "Kujou", "Sara Kujou"],
         "vision": "Electro",
         "weapon": "Bow",
         "region": "Inazuma",
@@ -600,7 +618,8 @@
         "link": "https://genshin-impact.fandom.com/wiki/Kujou_Sara"
     },
     {
-        "name": ["Kuki Shinobu", "Shinobu", "Kuki", "Shinobu Kuki"],
+        "name": "Kuki Shinobu",
+        "alternate names":["Shinobu", "Kuki", "Shinobu Kuki"],
         "vision": "Electro",
         "weapon": "Sword",
         "region": "Inazuma",
@@ -626,7 +645,8 @@
         "link": "https://genshin-impact.fandom.com/wiki/Layla"
     },
     {
-        "name": ["Lisa", "Minci", "Lisa Minci"],
+        "name": "Lisa",
+        "alternate names":["Minci", "Lisa Minci"],
         "vision": "Electro",
         "weapon": "Catalyst",
         "region": "Mondstadt",
@@ -639,7 +659,8 @@
         "link": "https://genshin-impact.fandom.com/wiki/Lisa"
     },
     {
-        "name": ["Lumine", "Traveler (Female)", "Abyss Twin (Female)"],
+        "name": "Lumine",
+        "alternate names":["Traveler (Female)", "Abyss Twin (Female)"],
         "vision": "N/A",
         "weapon": "Sword",
         "region": "N/A",
@@ -652,7 +673,8 @@
         "link": "https://genshin-impact.fandom.com/wiki/Traveler"
     },
     {
-        "name": ["Lynette", "Shnezevna", "Lynette Shnezevna"],
+        "name": "Lynette",
+        "alternate names":["Shnezevna", "Lynette Shnezevna"],
         "vision": "Anemo",
         "weapon": "Sword",
         "region": "Fontaine",
@@ -665,7 +687,8 @@
         "link": "https://genshin-impact.fandom.com/wiki/Lynette"
     },
     {
-        "name": ["Lyney", "Shnezevich", "Lyney Shnezevich"],
+        "name": "Lyney",
+        "alternate names":["Shnezevich", "Lyney Shnezevich"],
         "vision": "Pyro",
         "weapon": "Bow",
         "region": "Fontaine",
@@ -678,7 +701,8 @@
         "link": "https://genshin-impact.fandom.com/wiki/Lyney"
     },
     {
-        "name": ["Mika", "Schmidt", "Mika Schmidt"],
+        "name": "Mika",
+        "alternate names":["Schmidt", "Mika Schmidt"],
         "vision": "Cryo",
         "weapon": "Polearm",
         "region": "Mondstadt",
@@ -691,7 +715,8 @@
         "link": "https://genshin-impact.fandom.com/wiki/Mika"
     },   
     {
-        "name": ["Mona", "Megistus", "Mona Megistus"],
+        "name": "Mona",
+        "alternate names":["Megistus", "Mona Megistus"],
         "vision": "Hydro",
         "weapon": "Catalyst",
         "region": "Mondstadt",
@@ -731,7 +756,8 @@
         "link": "https://genshin-impact.fandom.com/wiki/Nahida"
     },
     {
-        "name": ["Navia", "Caspar", "Navia Caspar"],
+        "name": "Navia",
+        "alternate names":["Caspar", "Navia Caspar"],
         "vision": "Geo",
         "weapon": "Claymore",
         "region": "Fontaine",
@@ -809,7 +835,8 @@
         "link": "https://genshin-impact.fandom.com/wiki/Qiqi"
     },
     {
-        "name": ["Raiden Shogun", "Ei"],
+        "name": "Raiden Shogun",
+        "alternate names":["Ei"],
         "vision": "Electro",
         "weapon": "Polearm",
         "region": "Inazuma",
@@ -849,7 +876,8 @@
         "link": "https://genshin-impact.fandom.com/wiki/Rosaria"
     },
     {
-        "name": ["Sangonomiya Kokomi", "Kokomi", "Sangonomiya", "Kokomi Sangonomoiya"],
+        "name": "Sangonomiya Kokomi",
+        "alternate names":["Kokomi", "Sangonomiya", "Kokomi Sangonomoiya"],
         "vision": "Hydro",
         "weapon": "Catalyst",
         "region": "Inazuma",
@@ -901,7 +929,8 @@
         "link": "https://genshin-impact.fandom.com/wiki/Shenhe"
     },
     {
-        "name": ["Shikanoin Heizou", "Heizou", "Shikanoin", "Heizou Shikanoin"],
+        "name": "Shikanoin Heizou",
+        "alternate names":["Heizou", "Shikanoin", "Heizou Shikanoin"],
         "vision": "Anemo",
         "weapon": "Catalyst",
         "region": "Inazuma",
@@ -940,7 +969,8 @@
         "link": "https://genshin-impact.fandom.com/wiki/Sucrose"
     },
     {
-        "name": ["Tartaglia", "Ajax", "Childe"],
+        "name": "Tartaglia",
+        "alternate names":["Ajax", "Childe"],
         "vision": "Hydro",
         "weapon": "Bow",
         "region": "Snezhnaya",
@@ -979,7 +1009,8 @@
         "link": "https://genshin-impact.fandom.com/wiki/Tighnari"
     },
     {
-        "name": ["Venti", "Barbatos"],
+        "name": "Venti",
+        "alternate names": ["Barbatos"],
         "vision": "Anemo",
         "weapon": "Bow",
         "region": "Mondstadt",
@@ -993,7 +1024,8 @@
         "link": "https://genshin-impact.fandom.com/wiki/Venti"
     },
     {
-        "name": ["Wanderer", "Scaramouche", "The Balladeer"],
+        "name": "Wanderer",
+        "alternate names": ["Scaramouche", "The Balladeer"],
         "vision": "Anemo",
         "weapon": "Catalyst",
         "region": "Sumeru",
@@ -1019,7 +1051,8 @@
         "link": "https://genshin-impact.fandom.com/wiki/Wriothesley"
     },
     {
-        "name": ["Xiangling", "Mao", "Mao Xiangling", "Xiangling Mao"],
+        "name": "Xiangling",
+        "alternate names":["Mao", "Mao Xiangling", "Xiangling Mao"],
         "vision": "Pyro",
         "weapon": "Polearm",
         "region": "Liyue",
@@ -1058,7 +1091,8 @@
         "link": "https://genshin-impact.fandom.com/wiki/Xiao"
     },
     {
-        "name": ["Xingqiu", "Feiyun", "Feiyun Xingqiu", "Xingqiu Feiyun"],
+        "name": "Xingqiu",
+        "alternate names":["Feiyun", "Feiyun Xingqiu", "Xingqiu Feiyun"],
         "vision": "Hydro",
         "weapon": "Sword",
         "region": "Liyue",
@@ -1084,7 +1118,8 @@
         "link": "https://genshin-impact.fandom.com/wiki/Xinyan"
     },
     {
-        "name": ["Yae Miko", "Miko", "Yae", "Miko Yae"],
+        "name": "Yae Miko",
+        "alternate names":["Miko", "Yae", "Miko Yae"],
         "vision": "Electro",
         "weapon": "Catalyst",
         "region": "Inazuma",
@@ -1136,7 +1171,8 @@
         "link": "https://genshin-impact.fandom.com/wiki/Yelan"
     },
     {
-        "name": ["Yoimiya", "Naganohara", "Naganohara Yoimiya", "Yoimiya Naganohara"],
+        "name": "Yoimiya",
+        "alternate names":["Naganohara", "Naganohara Yoimiya", "Yoimiya Naganohara"],
         "vision": "Pyro",
         "weapon": "Bow",
         "region": "Inazuma",
