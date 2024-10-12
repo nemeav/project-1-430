@@ -743,6 +743,7 @@
     },
     {
         "name": "Nahida",
+        "alternate names":["Buer"],
         "vision": "Dendro",
         "weapon": "Catalyst",
         "region": "Sumeru",
@@ -836,7 +837,7 @@
     },
     {
         "name": "Raiden Shogun",
-        "alternate names":["Ei"],
+        "alternate names":["Beelzebub", "Ei"],
         "vision": "Electro",
         "weapon": "Polearm",
         "region": "Inazuma",
@@ -1186,6 +1187,7 @@
     },
     {
         "name": "Zhongli",
+        "alternate names":["Morax"],
         "vision": "Geo",
         "weapon": "Polearm",
         "region": "Liyue",
