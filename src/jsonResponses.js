@@ -4,15 +4,16 @@ const fs = require('fs');
 const genshinData = JSON.parse(fs.readFileSync(`${__dirname}/../data/characters.json`));
 // variables used by multiple funcs
 let statusCode;
-// FUTURE NOTE: MIGHT INIT responseJSON UP HERE
+let responseJSON = {};
 
-// create header and update length for data, type
+// process file ()
 const respondJSON = (request, response, status, object) => {
   const content = JSON.stringify(object);
   response.writeHead(status, {
     'Content-Type': 'application/json',
     'Content-Length': Buffer.byteLength(content, 'utf8'),
   });
+
   // get vs head differentiation
   if (request.method !== 'HEAD' && status !== 204) {
     response.write(content);
@@ -24,7 +25,7 @@ const respondJSON = (request, response, status, object) => {
 // random character generator
 const getRandom = (request, response) => {
   const randomNum = Math.floor(Math.random() * (genshinData.length - 1));
-  const responseJSON = genshinData[randomNum];
+  responseJSON = genshinData[randomNum];
   respondJSON(request, response, 200, responseJSON);
 };
 
@@ -34,18 +35,31 @@ const getVisions = (request, response) => {
   // send data based on query param in endpoint
   request.query.vision = request.query.vision.charAt(0).toUpperCase()
     + request.query.vision.slice(1).toLowerCase();
-  const responseJSON = genshinData.filter((char) => char.vision === request.query.vision);
+  responseJSON = genshinData.filter((char) => char.vision === request.query.vision);
   respondJSON(request, response, statusCode, responseJSON);
 };
 
 // get character's talents by name
 // couldn't test without client side - hoping for the best
 const getTalents = (request, response) => {
-  let responseJSON;
-  const { name } = request.body;
-  // checks if the user entered a valid character, handles accordingly
-  if (genshinData[name]) {
-    responseJSON = genshinData[name].talents;
+  const name = request.query.name.trim();
+  const character = genshinData.filter((c) => c.name === name || (c['alternate names'] && c['alternate names'].includes(name)));
+
+  // checks if the user entered a valid character/alias, handles accordingly
+  if (character.length === 1) {
+    responseJSON = character[0].talents;
+    statusCode = 200;
+  // if user entered family name instead of first name...
+  } else if (character.length > 1) {
+    // putting them in an array prevented [object Object] issue
+    responseJSON = [];
+
+    for (let i = 0; i < character.length; i++) {
+      responseJSON.push({
+        name: character[i].name,
+        talents: character[i].talents,
+      });
+    }
     statusCode = 200;
   } else {
     responseJSON = {
@@ -54,6 +68,7 @@ const getTalents = (request, response) => {
     };
     statusCode = 400;
   }
+  console.log(responseJSON);
   return respondJSON(request, response, statusCode, responseJSON);
 };
 
@@ -61,33 +76,34 @@ const getTalents = (request, response) => {
 const getRegion = (request, response) => {
   statusCode = 200; // FUTURE NOTE: might init this up top as default
   // send data based on query param in endpoint
-  // FUTURE NOTE: might have to lowercase params here and in index
+  console.log(request.query.region);
   request.query.region = request.query.region.charAt(0).toUpperCase()
     + request.query.region.slice(1).toLowerCase();
 
-  const responseJSON = genshinData.filter((char) => char.region === request.query.region);
+  responseJSON = genshinData.filter((char) => char.region === request.query.region);
   respondJSON(request, response, statusCode, responseJSON);
 };
 
-// post a new character to genshinData (OC/characters released after 5.0)
+// post a new character to genshinData (OC/characters released after 5.0 + Xilonen)
 const addChar = (request, response) => {
-  let responseJSON;
   const {
-    newName, vision, weapon, region, rarity, basic, skill, burst,
+    name, vision, weapon, region, rarity, basic, skill, burst,
   } = request.body;
   // checks if the user created a valid character, handles accordingly
-  if (newName && vision && weapon && region && rarity && basic && skill && burst) {
+  if (name && vision && weapon && region && rarity && basic && skill && burst) {
     responseJSON.message = 'Created successfully';
     statusCode = 201;
-    genshinData[newName] = {
-      name: newName,
+    genshinData[name] = {
+      name,
       vision,
       weapon,
       region,
       rarity,
-      basic,
-      skill,
-      burst,
+      talent: {
+        basic,
+        skill,
+        burst,
+      },
     };
   } else {
     responseJSON = {
@@ -101,37 +117,55 @@ const addChar = (request, response) => {
 
 // edit a char in genshinData
 const editChar = (request, response) => {
-  let responseJSON;
-  const {
-    editName, editVision, editWeapon, editRegion, editRarity, editBasic, editSkill, editBurst,
+  // Processing from clientside
+  let {
+    name, vision, weapon, region, rarity, basic, skill, burst,
   } = request.body;
-  // checks if the user created a valid character, handles accordingly
-  if (genshinData[editName]) {
-    responseJSON.message = 'Updated Successfully. No content to display';
-    statusCode = 204;
-    genshinData[editName] = {
-      vision: editVision,
-      weapon: editWeapon,
-      region: editRegion,
-      rarity: editRarity,
-      basic: editBasic,
-      skill: editSkill,
-      burst: editBurst,
-    };
-  } else {
-    responseJSON = {
-      message: 'Character does not exist. Check spelling or try Create a Character',
-      id: 'invalidName',
-    };
-    statusCode = 400;
-    return respondJSON(request, response, statusCode, respondJSON);
+
+  // Log the incoming request body
+  console.log('Request body:', request.body);
+
+  // Added to trim any weird newline characters
+  name = name.trim();
+  vision = vision.trim();
+  weapon = weapon.trim();
+  region = region.trim();
+  rarity = rarity.trim();
+  basic = basic.trim();
+  skill = skill.trim();
+  burst = burst.trim();
+
+  // Default response for non-existent character
+  responseJSON = {
+    message: 'Character does not exist. Check spelling or try Create a Character',
+    id: 'badRequestInvalidName',
+  };
+
+  // Find the character by name
+  const character = genshinData.find((c) => c.name === name);
+
+  if (!character) {
+    return respondJSON(request, response, 400, responseJSON);
   }
-  return respondJSON(request, response, statusCode, {});
+
+  // Update fields if provided
+  if (vision) character.vision = vision;
+  if (weapon) character.weapon = weapon;
+  if (region) character.region = region;
+  if (rarity) character.rarity = rarity;
+  if (basic && skill && burst) {
+    character.talents = { basic, skill, burst };
+  }
+
+  console.log('Updated character:', character);
+
+  response.writeHead(204); // best I got; respondJSON not working w/ 204 like in old proj
+  return character;
 };
 
 // error page
 const notFound = (request, response) => {
-  const responseJSON = {
+  responseJSON = {
     message: 'The page you are looking for was not found',
     id: 'notFound',
   };

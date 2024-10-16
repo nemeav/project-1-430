@@ -7,44 +7,37 @@
     <title>Project 1 Milestone</title>
 
     <script>
+        // had to leave script here bc eslint was error checking no matter where i put it
         // fetch
         const handleResponse = async (response, section) => {
             const content = document.querySelector(`${section}`);
             const resText = await response.text();
             // handle page based on response
             const parsedResponse = JSON.parse(resText);
-            //only show users for /getUsers + GET
-            if (response.method !== 'HEAD' && response.status === 200) {
-                content.innerHTML += `<p>${JSON.stringify(parsedResponse.users)}</p>`;
-            }
-            if (parsedResponse.message) {
-                content.innerHTML += `<p>Message: ${parsedResponse.message}</p>`;
-            }
-
-            console.log(parsedResponse);
-
-            // clear for clarity - not sure if necessary though...
             content.innerHTML = '';
 
             // header titles based on status code
             switch (response.status) {
                 case 200:
-                    if (Object.keys(parsedResponse).length === 7) {
+                    // if keys = 3 or 7-9, print entire response
+                    // 7-9 for each key held by char info (getRandom), 3 for the keys in char's talents
+                    // 7 = standard, 8 = w/ add'l archon or alternate names key, 9 = both mentioned in 8
+                    console.log(Object.keys(parsedResponse).length);
+                    if (Object.keys(parsedResponse).length <= 9 && Object.keys(parsedResponse).length >= 7 || Object.keys(parsedResponse).length === 3 || Object.keys(parsedResponse).length === 2) {
                         content.innerHTML = JSON.stringify(parsedResponse);
-                        console.log(Object.keys(parsedResponse).length)
                     } else {
+                        // if longer, assume list + only print char name
                         for (const char in parsedResponse) {
-                            content.innerHTML += ` ${parsedResponse[char].name},<br>`
+                            content.innerHTML += ` ${parsedResponse[char].name}<br>`
                         }
                     }
-                    console.log("Done")
                     break;
                 case 201:
-                    content.innerHTML = '<b>Created</b>';
+                    content.innerHTML = '<b>Character Created!</b>';
                     break;
                 case 204:
-                    content.innerHTML = '<b>Updated (No Content)</b>';
-                    return;
+                    content.innerHTML = '<b>Character Updated!</b>';
+                    break;
                 case 400:
                     content.innerHTML = `<b>Bad Request</b>`;
                     break;
@@ -53,13 +46,15 @@
                     content.innerHTML = `<b>Not Found</b>`;
                     break;
             }
+
+            console.log(parsedResponse);
         };
 
         // get/head requests
-        const sendGetHead = async (div, section, formData) => {
+        const sendGetHead = async (div, section, param) => {
             let url = div.getAttribute('action');
-            if (formData) {
-                url += `?${formData}`;
+            if (param) {
+                url += `?${param}`;
             }
             const method = div.getAttribute('method');
             let response = await fetch(url, {
@@ -73,27 +68,39 @@
             handleResponse(response, section);
         };
 
-        // // manage post
-        // const sendPost = async (nameForm) => {
-        //     const url = nameForm.getAttribute('action');
-        //     const method = nameForm.getAttribute('method');
+        // post
+        const sendPost = async (div, section) => {
+            const url = div.getAttribute('action');
+            const method = div.getAttribute('method');
 
-        //     const nameField = nameForm.querySelector('#nameField');
-        //     const ageField = nameForm.querySelector('#ageField');
+            const nameField = div.querySelector('#name');
+            const visionField = div.querySelector('#vision');
+            const weaponField = div.querySelector('#weapon');
+            const regionField = div.querySelector('#region');
+            const rarityField = div.querySelector('#rarity');
+            const basicField = div.querySelector('#basic');
+            const skillField = div.querySelector('#skill');
+            const burstField = div.querySelector('#burst');
 
-        //     const formData = `name=${nameField.value}&age=${ageField.value}`;
+            const formData = `name=${nameField.value}
+            &vision=${visionField.value}
+            &weapon=${weaponField.value}
+            &region=${regionField.value}
+            &rarity=${rarityField.value}
+            &basic=${basicField.value}
+            &skill=${skillField.value}
+            &burst=${burstField.value}`;
 
-        //     let response = await fetch(url, {
-        //         method: method,
-        //         headers: {
-        //             'Content-Type': 'application/x-www-form-urlencoded',
-        //             'Accept': 'application/json',
-        //         },
-        //         body: formData,
-        //     });
-
-        //     handleResponse(response);
-        // };
+            let response = await fetch(url, {
+                method: method,
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                    'Accept': 'application/json',
+                },
+                body: formData,
+            });
+            handleResponse(response, section);
+        };
 
         // setup for init
         const init = () => {
@@ -104,6 +111,20 @@
             const visionDiv = document.querySelector('#visionGet2');
             const visionSelect = document.querySelector('#vision');
             const visionButton = document.querySelector('#sendVisionList');
+            // for name
+            const talentDiv = document.querySelector('#talentsGet3');
+            const talentField = document.querySelector('#nameLine');
+            const talentButton = document.querySelector('#sendTalent');
+            // for region
+            const regionDiv = document.querySelector('#regionGet4');
+            const regionSelect = document.querySelector('#region');
+            const regionButton = document.querySelector('#sendRegionList');
+            // for adding chars
+            const addCharDiv = document.querySelector('#characterAddPost1');
+            const addCharButton = document.querySelector('#sendCharacter');
+            // for editing
+            const editCharDiv = document.querySelector('#characterEditPost2');
+            const editCharButton = document.querySelector('#updateCharacter');
 
             // PREVENT DEFAULT ACTIONS FOR EACH METHOD
             // get/head funcs
@@ -119,20 +140,44 @@
                 return false;
             };
 
-            // // post
-            // const addUser = (e) => {
-            //     e.preventDefault();
-            //     sendPost(nameForm);
-            //     return false;
-            // };
+            const fetchTalents = (e) => {
+                e.preventDefault();
+                sendGetHead(talentDiv, '#content3', `name=${talentField.value}`);
+                return false;
+            }
+
+            const fetchRegion = (e) => {
+                e.preventDefault();
+                sendGetHead(regionDiv, '#content4', `region=${regionSelect.value}`);
+                return false;
+            };
+
+            // post
+            const addChar = (e) => {
+                e.preventDefault();
+                sendPost(addCharDiv, '#content5');
+                return false;
+            };
+
+            const editChar = (e) => {
+                e.preventDefault();
+                sendPost(editCharDiv, '#content6');
+                return false;
+            };
 
             // listener connectors
             // random
-            randomDiv.addEventListener('submit', fetchRandom);
             randomButton.addEventListener('click', fetchRandom);
             // vision
-            visionSelect.addEventListener('submit', fetchVision);
             visionButton.addEventListener('click', fetchVision);
+            // name
+            talentButton.addEventListener('click', fetchTalents);
+            // region
+            regionButton.addEventListener('click', fetchRegion);
+            // add char
+            addCharButton.addEventListener('click', addChar);
+            // edit char
+            editCharButton.addEventListener('click', editChar);
         };
 
         window.onload = init;
@@ -146,7 +191,7 @@
         <h2>Random Character Information</h2>
         <p>Generate information about a random character.</p>
         <small>Fun game: Let the RNG gods decide your next main. Ehehe~</small><br><br>
-        <button id="sendRandom">Get Character Info</button>
+        <button id="sendRandom">Get Character Info</button><br>
         <section id="content1">
         </section>
     </div>
@@ -163,22 +208,24 @@
             <option value="cryo">Cryo (Ice)</option>
             <option value="geo">Geo (Earth)</option>
         </select>
-        <button id="sendVisionList">Get Characters</button>
+        <button id="sendVisionList">Get Characters</button><br>
         <section id="content2">
         </section>
     </div>
 
-    <div id="talentsGet3">
+    <div id="talentsGet3" action="/getTalents" method="GET">
         <h2>View Talents (GET 3)</h2>
         <p>Enter a character name to see their talents.</p>
         <label>Name:</label>
-        <input id="nameField" type="text" name="name" />
+        <input id="nameLine" type="text" name="name" />
         <button id="sendTalent">Get Talents</button><br>
         <small>*Recommended: Use given/first name, not the family name. Either works but it gets a little funky with the
             Inazuman siblings/characters.</small>
+        <section id="content3">
+        </section>
     </div>
 
-    <div id="regionGet4">
+    <div id="regionGet4" action="/getRegion" method="GET">
         <h2>Regional Roster (GET 4)</h2>
         <p>Select a region to view all characters who reside there.</p>
         <select id="region">
@@ -189,27 +236,29 @@
             <option value="Fontaine">Fontaine</option>
             <option value="Natlan">Natlan</option>
             <option value="Snezhnaya">Snezhnaya</option>
-            <option value="other">Other/Unaligned</option>
+            <option value="Other">Other/Unaligned</option>
         </select>
-        <button id="sendRegion">Get Regional Characters</button><br>
+        <button id="sendRegionList">Get Regional Characters</button><br>
         <small>*Please note: Characters are categorized by the region's Vision they hold, not necessarily their
-            birth/residency.</small>
+            birth/residency.</small><br>
+        <section id="content4">
+        </section>
     </div>
 
-    <div id="characterAddPost1">
+    <div id="characterAddPost1" action="/addChar" method="POST">
         <h2>Create a New Character (POST 1)</h2>
         <label>Character Details </label><br>
         <label>Name: </label>
         <input id="name" type="text" newName="newName" /><br>
         <label>Vision: </label>
         <select id="vision" vision="vision">
-            <option value="pyro">Pyro (Fire)</option>
-            <option value="hydro">Hydro (Water)</option>
-            <option value="anemo">Anemo (Wind)</option>
-            <option value="electro">Electro (Electricity)</option>
-            <option value="dendro">Dendro (Life/Plant)</option>
-            <option value="cryo">Cryo (Ice)</option>
-            <option value="geo">Geo (Earth)</option>
+            <option value="Pyro">Pyro (Fire)</option>
+            <option value="Hydro">Hydro (Water)</option>
+            <option value="Anemo">Anemo (Wind)</option>
+            <option value="Electro">Electro (Electricity)</option>
+            <option value="Dendro">Dendro (Life/Plant)</option>
+            <option value="Cryo">Cryo (Ice)</option>
+            <option value="Geo">Geo (Earth)</option>
         </select>
         <label>Weapon: </label>
         <select id="weapon" weapon="weapon">
@@ -239,10 +288,12 @@
         <input id="skill" type="text" skill="skill" />
         <label>Burst: </label>
         <input id="burst" type="text" burst="burst" />
-        <button id="sendCharacter">Submit Character</button>
+        <button id="sendCharacter">Submit Character</button><br>
+        <section id="content5">
+        </section>
     </div>
 
-    <div id="characterEditPost2">
+    <div id="characterEditPost2" action="/editChar" method="POST">
         <h2>Edit Existing Character (POST 2)</h2>
         <label>Character Details </label><br>
         <label>Name: </label>
@@ -285,7 +336,9 @@
         <input id="skill" type="text" skill="editSkill" />
         <label>Burst: </label>
         <input id="burst" type="text" burst="editBurst" />
-        <button id="sendCharacter">Update Character</button>
+        <button id="updateCharacter">Update Character</button><br>
+        <section id="content6">
+        </section>
     </div>
 
 </body>

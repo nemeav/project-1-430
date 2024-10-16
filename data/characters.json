@@ -5,7 +5,7 @@
         "alternate names": ["Traveler (Male)", "Abyss Twin (Male)"],
         "vision": "N/A",
         "weapon": "Sword",
-        "region": "N/A",
+        "region": "Other",
         "rarity": 5,
         "talents": {
             "basic": "*Depends on Elemental Resonance*",
@@ -44,7 +44,7 @@
         "name": "Aloy",
         "vision": "Cryo",
         "weapon": "Bow",
-        "region": "N/A",
+        "region": "Other",
         "rarity": 5,
         "talents": {
             "basic": "Rapid Fire",
@@ -663,7 +663,7 @@
         "alternate names":["Traveler (Female)", "Abyss Twin (Female)"],
         "vision": "N/A",
         "weapon": "Sword",
-        "region": "N/A",
+        "region": "Other",
         "rarity": 5,
         "talents": {
             "basic": "*Depends on Elemental Resonance*",
@@ -1090,6 +1090,18 @@
             "burst": "Bane of All Evil"
         },
         "link": "https://genshin-impact.fandom.com/wiki/Xiao"
+    },
+    {
+        "name": "Xilonen",
+        "vision": "Geo",
+        "weapon": "Sword",
+        "region": "Natlan",
+        "rarity": 5,
+        "talents": {
+            "basic": "Ehecatl's Roar",
+            "skill": "Yohual's Scratch",
+            "burst": "Ocelotlicue Point!"
+        }
     },
     {
         "name": "Xingqiu",
