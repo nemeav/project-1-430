@@ -1,0 +1,58 @@
+/*purely style*/
+div {
+    border: 3px double #0D2A50;
+    padding: 10px 20px 20px;
+}
+
+h1 {
+    grid-column: 1 / -1;
+    font-family: 'Philosopher', Garamond;
+    color: #0D518E;
+    text-align: center;
+    font-weight: 800;
+    font-size: 5vh;
+}
+
+h2 {
+    font-family: 'Philosopher', Garamond;
+    color: #0B68B6;
+    text-align: left;
+    font-weight: 700;
+}
+
+p, button {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+small {
+    font-family: Arial, sans-serif;
+    font-style: italic;
+}
+
+/*grid related*/
+body {
+    display: grid;
+    grid-template-columns: 40vw 40vw;
+    grid-template-rows: auto auto auto auto auto;
+     /*spacing*/
+     gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    align-content: center;
+}
+
+#randomGet1, #visionGet2 {
+    grid-column: span 1;
+}
+
+#talentsGet3, #regionGet4 {
+    grid-column: span 1;
+}
+
+#characterAddPost1 {
+    grid-column: 1 / -1;
+}
+
+#characterEditPost2 {
+    grid-column: 1 / -1;
+}

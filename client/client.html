@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 1 Milestone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
 
     <script>
         // had to leave script here bc eslint was error checking no matter where i put it
@@ -22,7 +28,6 @@
                     // if keys = 3 or 7-9, print entire response
                     // 7-9 for each key held by char info (getRandom), 3 for the keys in char's talents
                     // 7 = standard, 8 = w/ add'l archon or alternate names key, 9 = both mentioned in 8
-                    console.log(Object.keys(parsedResponse).length);
                     if (Object.keys(parsedResponse).length <= 9 && Object.keys(parsedResponse).length >= 7 || Object.keys(parsedResponse).length === 3 || Object.keys(parsedResponse).length === 2) {
                         content.innerHTML = JSON.stringify(parsedResponse);
                     } else {
@@ -197,7 +202,7 @@
     </div>
 
     <div id="visionGet2" action="/getVisions" method="GET">
-        <h2>Vision Roster (GET 2)</h2>
+        <h2>Vision Roster</h2>
         <p>See all characters of a specific Vision.</p>
         <select id="vision">
             <option value="pyro">Pyro (Fire)</option>
@@ -214,19 +219,19 @@
     </div>
 
     <div id="talentsGet3" action="/getTalents" method="GET">
-        <h2>View Talents (GET 3)</h2>
+        <h2>View Talents</h2>
         <p>Enter a character name to see their talents.</p>
         <label>Name:</label>
         <input id="nameLine" type="text" name="name" />
         <button id="sendTalent">Get Talents</button><br>
-        <small>*Recommended: Use given/first name, not the family name. Either works but it gets a little funky with the
-            Inazuman siblings/characters.</small>
+        <small>*Recommended: Use given/first name, not family name. Either works but it gets a little funky with the
+            Inazumans/siblings.</small>
         <section id="content3">
         </section>
     </div>
 
     <div id="regionGet4" action="/getRegion" method="GET">
-        <h2>Regional Roster (GET 4)</h2>
+        <h2>Regional Roster</h2>
         <p>Select a region to view all characters who reside there.</p>
         <select id="region">
             <option value="Mondstadt">Mondstadt</option>
@@ -239,14 +244,14 @@
             <option value="Other">Other/Unaligned</option>
         </select>
         <button id="sendRegionList">Get Regional Characters</button><br>
-        <small>*Please note: Characters are categorized by the region's Vision they hold, not necessarily their
+        <small>*Note: Characters categorized by their Vision's region, not necessarily their
             birth/residency.</small><br>
         <section id="content4">
         </section>
     </div>
 
     <div id="characterAddPost1" action="/addChar" method="POST">
-        <h2>Create a New Character (POST 1)</h2>
+        <h2>Create a Character</h2>
         <label>Character Details </label><br>
         <label>Name: </label>
         <input id="name" type="text" newName="newName" /><br>
@@ -294,7 +299,7 @@
     </div>
 
     <div id="characterEditPost2" action="/editChar" method="POST">
-        <h2>Edit Existing Character (POST 2)</h2>
+        <h2>Edit Existing Character</h2>
         <label>Character Details </label><br>
         <label>Name: </label>
         <input id="name" type="text" newName="editName" /><br>

@@ -31,12 +31,11 @@ const getRandom = (request, response) => {
 
 // get chars by vision type
 const getVisions = (request, response) => {
-  statusCode = 200;
   // send data based on query param in endpoint
   request.query.vision = request.query.vision.charAt(0).toUpperCase()
     + request.query.vision.slice(1).toLowerCase();
   responseJSON = genshinData.filter((char) => char.vision === request.query.vision);
-  respondJSON(request, response, statusCode, responseJSON);
+  respondJSON(request, response, 200, responseJSON);
 };
 
 // get character's talents by name
@@ -49,7 +48,7 @@ const getTalents = (request, response) => {
   if (character.length === 1) {
     responseJSON = character[0].talents;
     statusCode = 200;
-  // if user entered family name instead of first name...
+    // if user entered family name instead of first name...
   } else if (character.length > 1) {
     // putting them in an array prevented [object Object] issue
     responseJSON = [];
@@ -74,14 +73,12 @@ const getTalents = (request, response) => {
 
 // get characters by their (vision) region
 const getRegion = (request, response) => {
-  statusCode = 200; // FUTURE NOTE: might init this up top as default
   // send data based on query param in endpoint
-  console.log(request.query.region);
   request.query.region = request.query.region.charAt(0).toUpperCase()
     + request.query.region.slice(1).toLowerCase();
 
   responseJSON = genshinData.filter((char) => char.region === request.query.region);
-  respondJSON(request, response, statusCode, responseJSON);
+  respondJSON(request, response, 200, responseJSON);
 };
 
 // post a new character to genshinData (OC/characters released after 5.0 + Xilonen)
@@ -118,22 +115,9 @@ const addChar = (request, response) => {
 // edit a char in genshinData
 const editChar = (request, response) => {
   // Processing from clientside
-  let {
+  const {
     name, vision, weapon, region, rarity, basic, skill, burst,
   } = request.body;
-
-  // Log the incoming request body
-  console.log('Request body:', request.body);
-
-  // Added to trim any weird newline characters
-  name = name.trim();
-  vision = vision.trim();
-  weapon = weapon.trim();
-  region = region.trim();
-  rarity = rarity.trim();
-  basic = basic.trim();
-  skill = skill.trim();
-  burst = burst.trim();
 
   // Default response for non-existent character
   responseJSON = {
@@ -142,7 +126,7 @@ const editChar = (request, response) => {
   };
 
   // Find the character by name
-  const character = genshinData.find((c) => c.name === name);
+  const character = genshinData.find((c) => c.name === name.trim());
 
   if (!character) {
     return respondJSON(request, response, 400, responseJSON);
@@ -157,7 +141,7 @@ const editChar = (request, response) => {
     character.talents = { basic, skill, burst };
   }
 
-  console.log('Updated character:', character);
+  console.log('Updated character:', character); // something definitely happens but don't have anyway to add to clientside
 
   response.writeHead(204); // best I got; respondJSON not working w/ 204 like in old proj
   return character;

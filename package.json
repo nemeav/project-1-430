@@ -228,7 +228,7 @@
     "start": "node ./src/server.js",
     "pretest": "eslint ./src --fix",
     "test": "echo \"Test complete\"",
-    "nodemon": "nodemon --watch ./src --watch ./hosted ./src/server.js --watch ./client/client.html"
+    "nodemon": "nodemon --watch ./src --watch ./hosted ./src/server.js --watch ./client/client.html --watch ./client/styles.css"
   },
   "author": "Neme Velazquez",
   "license": "UNLICENSED"
