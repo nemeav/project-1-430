@@ -144,7 +144,8 @@ const editChar = (request, response) => {
   console.log('Updated character:', character); // something definitely happens but don't have anyway to add to clientside
 
   response.writeHead(204); // best I got; respondJSON not working w/ 204 like in old proj
-  return character;
+  response.end();
+  return null;
 };
 
 // error page

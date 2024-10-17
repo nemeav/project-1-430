@@ -19,7 +19,9 @@
             const content = document.querySelector(`${section}`);
             const resText = await response.text();
             // handle page based on response
-            const parsedResponse = JSON.parse(resText);
+            if (response.status !== 204) {
+                const parsedResponse = JSON.parse(resText);
+            }
             content.innerHTML = '';
 
             // header titles based on status code
@@ -52,7 +54,9 @@
                     break;
             }
 
-            console.log(parsedResponse);
+            if (response.status !== 204) {
+                console.log(parsedResponse);
+            }
         };
 
         // get/head requests
