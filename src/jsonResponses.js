@@ -114,25 +114,25 @@ const addChar = (request, response) => {
 
 // edit a char in genshinData
 const editChar = (request, response) => {
-  // Processing from clientside
+  // processing from clientside
   const {
     name, vision, weapon, region, rarity, basic, skill, burst,
   } = request.body;
 
-  // Default response for non-existent character
+  // default response for non-existent character
   responseJSON = {
     message: 'Character does not exist. Check spelling or try Create a Character',
     id: 'badRequestInvalidName',
   };
 
-  // Find the character by name
+  // find the character by name
   const character = genshinData.find((c) => c.name === name.trim());
 
   if (!character) {
     return respondJSON(request, response, 400, responseJSON);
   }
 
-  // Update fields if provided
+  // update fields if provided
   if (vision) character.vision = vision;
   if (weapon) character.weapon = weapon;
   if (region) character.region = region;
@@ -141,9 +141,9 @@ const editChar = (request, response) => {
     character.talents = { basic, skill, burst };
   }
 
-  console.log('Updated character:', character); // something definitely happens but don't have anyway to add to clientside
+  console.log('Updated character:', character);
 
-  response.writeHead(204); // best I got; respondJSON not working w/ 204 like in old proj
+  response.writeHead(204);
   response.end();
   return null;
 };
